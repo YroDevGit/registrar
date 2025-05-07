@@ -1,0 +1,31 @@
+ERROR: (GSVHZ) [2025-05-07 05:56:05] (ERROR) SQLSTATE[HY000]: General error: 2006 MySQL server has gone away
+ERROR: (RZADE) [2025-05-07 05:56:13] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (E382J) [2025-05-07 05:56:17] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (YHR3C) [2025-05-07 05:56:21] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (A9FSP) [2025-05-07 05:56:26] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (BR6LV) [2025-05-07 05:56:30] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (T7SUY) [2025-05-07 05:56:34] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (H19FE) [2025-05-07 05:56:38] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (BJV7L) [2025-05-07 05:56:42] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (J9ZTG) [2025-05-07 05:56:46] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (29VHK) [2025-05-07 05:56:54] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (RGEKY) [2025-05-07 05:56:58] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (BIEZP) [2025-05-07 05:57:02] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (C3M4Q) [2025-05-07 07:25:35] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-final' for key 'id'
+ERROR: (T5DHU) [2025-05-07 07:45:33] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stat' in 'field list'
+ERROR: (CVRXK) [2025-05-07 07:45:38] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stat' in 'field list'
+ERROR: (BRN7S) [2025-05-07 07:45:51] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stat' in 'field list'
+ERROR: (NU1XI) [2025-05-07 08:34:26] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modifyddate' in 'field list'
+ERROR: (EMYP6) [2025-05-07 08:35:21] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (673DW) [2025-05-07 08:35:30] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (O8X9H) [2025-05-07 08:35:40] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (JRFZV) [2025-05-07 08:36:29] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (JVIKE) [2025-05-07 08:36:39] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (GZPRK) [2025-05-07 08:37:30] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (BSWAK) [2025-05-07 08:37:41] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (KRLGQ) [2025-05-07 08:37:55] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (1CK9S) [2025-05-07 08:38:10] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'
+ERROR: (RYPVQ) [2025-05-07 08:51:51] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tyrone2@gmail.comm' for key 'username'
+ERROR: (NBJP4) [2025-05-07 08:51:56] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tyrone2@gmail.comm' for key 'username'
+ERROR: (8D3MU) [2025-05-07 08:52:29] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tyrone2@gmail.comm' for key 'username'
+ERROR: (T8LWA) [2025-05-07 08:55:36] (ERROR) SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tyrone2@gmail.comm' for key 'username'

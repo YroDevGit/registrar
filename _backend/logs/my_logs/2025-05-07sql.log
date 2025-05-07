@@ -1,0 +1,2 @@
+[2025-05-07 02:37:18] select firstname, lastname, middlename, phone, coursemajor address from users where id = 'TLM-0857289526'
+[2025-05-07 02:38:44] select firstname, lastname, middlename, phone, coursemajor, address from users where id = 'TLM-0857289526'

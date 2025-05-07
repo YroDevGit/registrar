@@ -1,0 +1,1 @@
+ERROR: (GMQF9) [2025-05-04 02:38:23] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'courseid' in 'where clause'
