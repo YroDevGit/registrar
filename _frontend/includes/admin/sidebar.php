@@ -42,6 +42,12 @@
                 <i class="zmdi zmdi-shape"></i> <span>Quarters</span>
             </a>
         </li>
+
+        <li>
+            <a href="<?=page('admin/courses')?>">
+                <i class="zmdi zmdi-shape"></i> <span>Courses</span>
+            </a>
+        </li>
 <!--
         <li>
             <a href="forms.html">

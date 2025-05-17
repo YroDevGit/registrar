@@ -151,7 +151,23 @@ table th, table td {
 }
 
   </style>
-  <?=code_library()?>
+  <style>
+    @media print {
+      body {
+        zoom: 85%;
+      }
+      table.dataTable {
+        width: 100% !important;
+        font-size: 10pt !important;
+      }
+      table.dataTable th, table.dataTable td {
+        padding: 4px !important;
+      }
+    }
+    </style>
+
+
+ <?php include_page("student/lib") ?>
 </head>
 <body>
 
@@ -174,9 +190,10 @@ table th, table td {
         </div>
       </div>
       <h3>Students Table</h3>
-      <table id="gradetbl">
+      <table id="gradetbl" title="dsada">
         <thead>
           <tr>
+            <th>#</th>
             <th>Subject</th>
             <th>Description</th>
             <th>Grade</th>
@@ -196,7 +213,37 @@ table th, table td {
   <script src="<?=assets('teacher.js')?>"></script>
 
   <script>
-    $table = new DataTable(document.querySelector("#gradetbl"));
+    //$table = new DataTable(document.querySelector("#gradetbl"));
+    $table = $("#gradetbl").DataTable({
+    dom: 'Bfrtip',
+    order: [[0, 'desc']],
+    buttons: [
+        {
+            extend: 'pdfHtml5',
+            text: 'Print pdf',
+            orientation: 'landscape',
+            className: 'buttons-pdf',
+            pageSize: 'A4',
+            title: function() {
+                return "<?=$_SESSION['fullname']?> - "+selected_item("#quarter");
+            },
+            customize: function (doc) {
+                doc.styles.tableHeader.alignment = 'center';
+                doc.styles.tableHeader.fillColor = '#1f3b4d';
+                doc.styles.tableHeader.color = '#ffffff';
+                doc.styles.title.alignment = 'center';
+                doc.defaultStyle.alignment = 'center';
+
+                // Widen columns evenly
+                var tableBody = doc.content[1].table.body;
+                var colCount = tableBody[0].length;
+                var widths = new Array(colCount).fill('*');
+                doc.content[1].table.widths = widths;
+            }
+        }
+    ]
+});
+
   </script>
 
   <script>
@@ -230,13 +277,32 @@ table th, table td {
       $backend = $api.backend;
       $data = $backend.data ?? [];
       $table.clear().draw();
+      $count = 0;
+      $total = 0;
       $data.forEach(column => {
+        $grade = column.grade;
+        if($grade != null && $grade != ""){
+          $count += 1;
+          $total += $grade;
+        }
+        
         $table.row.add([
+          $count,
           column.subject,
           column.description,
-          column.grade
+          $grade
         ]).draw();
       });
+
+
+      $avg = $total / $count;
+      $table.row.add([
+        "",
+        "",
+        "Average",
+        `<b>${parseInt($avg)}</b>`
+      ]).draw();
+
     });
   </script>
 

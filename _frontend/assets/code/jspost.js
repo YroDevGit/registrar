@@ -424,6 +424,10 @@ function on_load(callable){
     window.addEventListener("load", callable());
 }
 
+function dom_loaded(callable){
+    window.addEventListener("DOMContentLoaded", callable());
+}
+
 function reload(){
     window.location.reload();
 }
@@ -440,6 +444,10 @@ function set_value(name, value, by="id"){
         element = document.getElementById(name);
     }
     element.value = value;
+}
+
+function set_input_value(selector, value){
+    document.querySelector(selector).value = value;
 }
 
 function set_values(array, by="id"){

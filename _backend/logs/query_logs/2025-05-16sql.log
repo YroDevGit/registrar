@@ -1,0 +1,532 @@
+success: (JFEBD) [2025-05-16 02:45:41] select * from users where username = 'tyronem@gmail.com' and password = 'password'
+success: (HPB5R) [2025-05-16 02:45:43] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-1143137101', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-16 02:45:43')
+success: (7A4BH) [2025-05-16 02:45:44] select * from theme where id = 1
+success: (LIX9O) [2025-05-16 02:45:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (T2JBX) [2025-05-16 02:45:44] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (ZGMKD) [2025-05-16 02:45:45] update theme set theme = 'theme16' where id = 1
+success: (GQBU7) [2025-05-16 02:45:48] select * from teachers
+success: (L8PMI) [2025-05-16 02:45:48] select * from theme where id = 1
+success: (KY9AI) [2025-05-16 02:45:49] update theme set theme = 'theme16' where id = 1
+success: (K7MUI) [2025-05-16 02:45:50] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (KWBA4) [2025-05-16 02:45:50] select * from theme where id = 1
+success: (AWM4O) [2025-05-16 02:45:50] update theme set theme = 'theme16' where id = 1
+success: (SEGKH) [2025-05-16 02:45:53] select * from teachers
+success: (JN1BK) [2025-05-16 02:45:53] select * from theme where id = 1
+success: (ZIT74) [2025-05-16 02:45:53] update theme set theme = 'theme16' where id = 1
+success: (FQN5J) [2025-05-16 02:45:56] SELECT * FROM teachers WHERE id = '1'
+success: (BVO92) [2025-05-16 02:46:00] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JDZN8) [2025-05-16 02:46:00] select * from theme where id = 1
+success: (EM3AP) [2025-05-16 02:46:00] update theme set theme = 'theme16' where id = 1
+success: (JHF16) [2025-05-16 02:46:03] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (WOU82) [2025-05-16 02:46:04] SELECT * FROM subject WHERE id = '3'
+success: (1RIB2) [2025-05-16 02:46:10] select * from quarter order by id desc
+success: (RM1JZ) [2025-05-16 02:46:10] select * from theme where id = 1
+success: (7935T) [2025-05-16 02:46:10] update theme set theme = 'theme16' where id = 1
+success: (QYHS4) [2025-05-16 02:49:49] select * from quarter order by id desc
+success: (R37H4) [2025-05-16 02:49:50] select * from theme where id = 1
+success: (EPUQI) [2025-05-16 02:49:50] update theme set theme = 'theme16' where id = 1
+success: (WLT1A) [2025-05-16 02:50:08] select * from quarter order by id desc
+success: (W8VR2) [2025-05-16 02:50:08] select * from theme where id = 1
+success: (Q9SI4) [2025-05-16 02:50:09] update theme set theme = 'theme16' where id = 1
+success: (SCW2E) [2025-05-16 02:51:15] select * from quarter order by id desc
+success: (P3XVQ) [2025-05-16 02:51:16] select * from theme where id = 1
+success: (3G6IA) [2025-05-16 02:51:16] update theme set theme = 'theme16' where id = 1
+success: (SVW7Z) [2025-05-16 02:54:01] select * from quarter order by id desc
+success: (JGC8K) [2025-05-16 02:54:02] select * from theme where id = 1
+success: (9BZSY) [2025-05-16 02:54:02] update theme set theme = 'theme16' where id = 1
+success: (L9B1K) [2025-05-16 02:54:34] select * from quarter order by id desc
+success: (GVA71) [2025-05-16 02:54:34] select * from theme where id = 1
+success: (MWV9A) [2025-05-16 02:54:35] update theme set theme = 'theme16' where id = 1
+error: (HO4CU) [2025-05-16 02:54:36] SELECT * FROM quarters WHERE id = '1-final' LIMIT 1
+error: (J89Y3) [2025-05-16 02:54:39] SELECT * FROM quarters WHERE id = '1-mid' LIMIT 1
+error: (UZ8KL) [2025-05-16 02:54:40] SELECT * FROM quarters WHERE id = '1-mid' LIMIT 1
+error: (YERU6) [2025-05-16 02:54:41] SELECT * FROM quarters WHERE id = '1-final' LIMIT 1
+success: (G4OTH) [2025-05-16 02:55:02] select * from quarter order by id desc
+success: (XNQPV) [2025-05-16 02:55:02] select * from theme where id = 1
+success: (RQ6B5) [2025-05-16 02:55:03] update theme set theme = 'theme16' where id = 1
+success: (QHNUP) [2025-05-16 02:55:04] SELECT * FROM quarter WHERE id = '1-final' LIMIT 1
+success: (1LBSQ) [2025-05-16 02:57:04] select * from quarter order by id desc
+success: (RGK1J) [2025-05-16 02:57:04] select * from theme where id = 1
+success: (A8D6M) [2025-05-16 02:57:05] update theme set theme = 'theme16' where id = 1
+success: (VIG5L) [2025-05-16 02:57:06] SELECT * FROM quarter WHERE id = '1-final' LIMIT 1
+success: (WANC7) [2025-05-16 02:57:10] SELECT * FROM quarter WHERE id = '1-mid' LIMIT 1
+success: (L2QZX) [2025-05-16 02:59:44] select * from quarter order by id desc
+success: (PINAX) [2025-05-16 02:59:44] select * from theme where id = 1
+success: (E8CMR) [2025-05-16 02:59:45] update theme set theme = 'theme16' where id = 1
+success: (QA9R6) [2025-05-16 02:59:47] SELECT * FROM quarter WHERE id = '1-final' LIMIT 1
+success: (DOE9P) [2025-05-16 02:59:50] update quarter set status = NULL where id = '1-final'
+success: (WBDRL) [2025-05-16 03:00:00] select * from quarter order by id desc
+success: (M1ALG) [2025-05-16 03:00:00] select * from theme where id = 1
+success: (7JF8P) [2025-05-16 03:00:01] update theme set theme = 'theme16' where id = 1
+success: (G1REZ) [2025-05-16 03:00:12] select * from quarter order by id desc
+success: (8E9ML) [2025-05-16 03:00:12] select * from theme where id = 1
+success: (5QFJ6) [2025-05-16 03:00:12] update theme set theme = 'theme16' where id = 1
+success: (DXS1O) [2025-05-16 03:00:14] SELECT * FROM quarter WHERE id = '1-mid' LIMIT 1
+success: (64EV7) [2025-05-16 03:01:00] select * from quarter order by id desc
+success: (879ST) [2025-05-16 03:01:00] select * from theme where id = 1
+success: (1ZBJV) [2025-05-16 03:01:01] update theme set theme = 'theme16' where id = 1
+success: (1SLMA) [2025-05-16 03:01:02] SELECT * FROM quarter WHERE id = '1-mid' LIMIT 1
+success: (W4IXK) [2025-05-16 03:01:03] UPDATE quarter SET id = '1-mid', description = '1st quarter midterm' WHERE id = '1-mid'
+success: (C3ARL) [2025-05-16 03:01:15] select * from quarter order by id desc
+success: (X4CPB) [2025-05-16 03:01:15] select * from theme where id = 1
+success: (39NHZ) [2025-05-16 03:01:16] update theme set theme = 'theme16' where id = 1
+success: (REFXU) [2025-05-16 03:01:17] SELECT * FROM quarter WHERE id = '1-mid' LIMIT 1
+success: (K8FT4) [2025-05-16 03:01:21] UPDATE quarter SET id = '1-mid', description = '1st quarter midterm.' WHERE id = '1-mid'
+success: (CH4WX) [2025-05-16 03:01:23] select * from quarter order by id desc
+success: (6L98J) [2025-05-16 03:01:23] select * from theme where id = 1
+success: (8G6UZ) [2025-05-16 03:01:24] update theme set theme = 'theme16' where id = 1
+success: (6XISB) [2025-05-16 03:01:39] select * from theme where id = 1
+success: (ZIT2W) [2025-05-16 03:01:39] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (I4C1T) [2025-05-16 03:01:40] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (IOZBP) [2025-05-16 03:01:40] update theme set theme = 'theme16' where id = 1
+success: (FIG6L) [2025-05-16 03:09:40] select * from users where username = 'ty@gmail.com' and password = 'sadsad'
+success: (5GVYI) [2025-05-16 03:15:04] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (UGMRN) [2025-05-16 03:15:04] select * from theme where id = 1
+success: (TIW1A) [2025-05-16 03:15:05] update theme set theme = 'theme16' where id = 1
+success: (SRXTM) [2025-05-16 03:22:46] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (EWF23) [2025-05-16 03:23:08] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (AWS1P) [2025-05-16 03:25:09] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7RTOW) [2025-05-16 03:25:23] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (RGLAM) [2025-05-16 03:26:25] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (KAPOS) [2025-05-16 03:33:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (VQLY9) [2025-05-16 03:35:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (D8GAY) [2025-05-16 03:36:25] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (G5NFS) [2025-05-16 03:36:37] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (U54GK) [2025-05-16 03:43:11] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (PIWRJ) [2025-05-16 03:44:01] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (DGCFJ) [2025-05-16 03:44:01] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (H8VUA) [2025-05-16 03:44:39] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (COGH9) [2025-05-16 03:44:39] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (ABXDO) [2025-05-16 03:44:47] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (UQMY3) [2025-05-16 03:44:51] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (AZN39) [2025-05-16 03:45:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (9KVLO) [2025-05-16 03:45:18] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (IV92L) [2025-05-16 03:46:00] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JVN24) [2025-05-16 03:46:00] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (G9FBQ) [2025-05-16 03:46:03] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (AKZF3) [2025-05-16 03:46:06] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 5
+success: (1G8U5) [2025-05-16 03:46:08] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 2
+success: (1LCGJ) [2025-05-16 03:46:11] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 3
+success: (AGW5Q) [2025-05-16 03:46:14] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 2
+success: (XJZOS) [2025-05-16 03:46:39] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (NV7MJ) [2025-05-16 03:46:39] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (OPH5A) [2025-05-16 03:46:45] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 3
+success: (IBVSY) [2025-05-16 03:57:10] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7C356) [2025-05-16 03:57:10] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (OWR52) [2025-05-16 03:57:10] select * from quarter where status = 1 order by id desc
+success: (A8W9F) [2025-05-16 03:57:29] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (6QMAZ) [2025-05-16 03:57:29] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (MG6EB) [2025-05-16 03:57:29] select * from quarter where status = 1 order by id desc
+success: (NRX7B) [2025-05-16 03:57:42] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (MR8Y2) [2025-05-16 03:57:42] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (E6FNG) [2025-05-16 03:57:42] select * from quarter where status = 1 order by id desc
+success: (WM8HK) [2025-05-16 03:57:50] select * from quarter order by id desc
+success: (WNGB3) [2025-05-16 03:57:50] select * from theme where id = 1
+success: (C2P5K) [2025-05-16 03:57:50] update theme set theme = 'theme16' where id = 1
+success: (G76DY) [2025-05-16 03:58:05] update quarter set status = 1 where id = '1-final'
+success: (L3HTS) [2025-05-16 03:58:06] select * from quarter order by id desc
+success: (QIW4L) [2025-05-16 03:58:06] select * from theme where id = 1
+success: (JGFWY) [2025-05-16 03:58:07] update theme set theme = 'theme16' where id = 1
+success: (15AL8) [2025-05-16 03:58:09] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (UPYAC) [2025-05-16 03:58:09] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (DFQ1H) [2025-05-16 03:58:09] select * from quarter where status = 1 order by id desc
+success: (PZU5E) [2025-05-16 04:06:47] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (RZ6KJ) [2025-05-16 04:06:47] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (HTXY5) [2025-05-16 04:06:47] select * from quarter where status = 1 order by id desc
+success: (HCZ7R) [2025-05-16 04:06:49] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (KB4CP) [2025-05-16 04:07:08] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (TD6SO) [2025-05-16 04:07:08] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (SAXDB) [2025-05-16 04:07:08] select * from quarter where status = 1 order by id desc
+success: (W6AQK) [2025-05-16 04:07:10] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (OK1P4) [2025-05-16 04:07:19] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-final' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (2Q5EJ) [2025-05-16 04:07:21] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (PS9RK) [2025-05-16 04:07:23] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-final' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (LOC6M) [2025-05-16 04:09:37] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7ONYK) [2025-05-16 04:09:37] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (WUSOF) [2025-05-16 04:09:37] select * from quarter where status = 1 order by id desc
+success: (APF5I) [2025-05-16 04:09:40] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (BQDJH) [2025-05-16 04:09:48] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 5
+success: (ERYMO) [2025-05-16 04:09:51] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (1ZRWO) [2025-05-16 04:10:06] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JNCF5) [2025-05-16 04:10:06] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (QD2K3) [2025-05-16 04:10:06] select * from quarter where status = 1 order by id desc
+success: (V8GMH) [2025-05-16 04:10:08] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 5
+success: (F8AI3) [2025-05-16 04:10:11] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (LCF5P) [2025-05-16 04:10:12] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (NWMTY) [2025-05-16 04:10:18] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (K4MFL) [2025-05-16 04:10:20] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (CUF3H) [2025-05-16 04:10:22] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 5
+success: (NKZ7P) [2025-05-16 04:10:26] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 2
+success: (RGW8K) [2025-05-16 04:10:29] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 2 ORDER BY u.lastname, u.firstname ASC;
+success: (GF4N5) [2025-05-16 04:10:45] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (59AJC) [2025-05-16 04:10:45] select * from theme where id = 1
+success: (XJM4N) [2025-05-16 04:10:45] update theme set theme = 'theme16' where id = 1
+success: (BZIUC) [2025-05-16 04:10:48] SELECT s.id, s.`subject`,a.coursemajor, s.`description`, t.id 'teacherid', t.firstname, t.lastname, t.contact, a.date_createdd, a.`status` FROM assignment a, `subject` s, teachers t WHERE a.`subject` = s.id AND a.teacher = t.id and a.coursemajor = 4 order by s.`subject` asc
+success: (TVACI) [2025-05-16 04:10:48] select * from quarter where status = 1 order by id desc
+success: (U4K8V) [2025-05-16 04:10:53] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 21 LEFT JOIN grades g ON u.id = g.student AND g.subject = 21 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (LGTE4) [2025-05-16 04:10:56] SELECT s.id, s.`subject`,a.coursemajor, s.`description`, t.id 'teacherid', t.firstname, t.lastname, t.contact, a.date_createdd, a.`status` FROM assignment a, `subject` s, teachers t WHERE a.`subject` = s.id AND a.teacher = t.id and a.coursemajor = 1 order by s.`subject` asc
+success: (JKNIB) [2025-05-16 04:10:56] select * from quarter where status = 1 order by id desc
+success: (KQE64) [2025-05-16 04:11:01] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (IW2EA) [2025-05-16 04:11:08] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (ZN6AX) [2025-05-16 04:11:08] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (6HLO2) [2025-05-16 04:11:08] select * from quarter where status = 1 order by id desc
+success: (BA8M9) [2025-05-16 04:11:10] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (S67EP) [2025-05-16 04:11:34] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (WS29O) [2025-05-16 04:13:30] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (OU2IJ) [2025-05-16 04:13:31] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (CIHWR) [2025-05-16 04:13:31] select * from quarter where status = 1 order by id desc
+success: (8C3EF) [2025-05-16 04:13:32] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (J4THO) [2025-05-16 04:14:06] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (1X9OC) [2025-05-16 04:14:06] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (XD17Y) [2025-05-16 04:14:06] select * from quarter where status = 1 order by id desc
+success: (O5DJ1) [2025-05-16 04:14:08] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (EJ3VN) [2025-05-16 04:14:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (W4UCB) [2025-05-16 04:14:58] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (B34HJ) [2025-05-16 04:14:58] select * from quarter where status = 1 order by id desc
+success: (4853F) [2025-05-16 04:15:29] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (V64ML) [2025-05-16 04:15:29] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (H3PB4) [2025-05-16 04:15:29] select * from quarter where status = 1 order by id desc
+success: (7B4TZ) [2025-05-16 04:15:31] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (1NIQ3) [2025-05-16 04:17:09] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (9JV1D) [2025-05-16 04:17:09] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (LK3VS) [2025-05-16 04:17:09] select * from quarter where status = 1 order by id desc
+success: (LDTH8) [2025-05-16 04:17:11] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (ERSNH) [2025-05-16 04:17:38] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (XIMF8) [2025-05-16 04:17:38] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (ROJU8) [2025-05-16 04:17:38] select * from quarter where status = 1 order by id desc
+success: (YXDOB) [2025-05-16 04:17:39] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = NULL LEFT JOIN grades g ON u.id = g.student AND g.subject = NULL AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (K6QLB) [2025-05-16 04:18:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (YKXSC) [2025-05-16 04:18:58] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (6E78T) [2025-05-16 04:18:58] select * from quarter where status = 1 order by id desc
+success: (5PXG2) [2025-05-16 04:19:00] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 20 LEFT JOIN grades g ON u.id = g.student AND g.subject = 20 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (FJ836) [2025-05-16 04:19:05] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (M9ZSU) [2025-05-16 04:19:06] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (KC5YS) [2025-05-16 04:24:27] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (Q5ZYB) [2025-05-16 04:24:27] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (S9CH5) [2025-05-16 04:24:27] select * from quarter where status = 1 order by id desc
+success: (MC23X) [2025-05-16 04:24:42] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (75I36) [2025-05-16 04:24:42] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (7A6FJ) [2025-05-16 04:24:42] select * from quarter where status = 1 order by id desc
+success: (IXTCQ) [2025-05-16 04:24:54] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (2L98W) [2025-05-16 04:24:54] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (827GY) [2025-05-16 04:24:54] select * from quarter where status = 1 order by id desc
+success: (D79HT) [2025-05-16 04:25:02] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (WJGKR) [2025-05-16 04:25:02] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (VY92Q) [2025-05-16 04:25:02] select * from quarter where status = 1 order by id desc
+success: (5GFP7) [2025-05-16 04:25:05] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 20 LEFT JOIN grades g ON u.id = g.student AND g.subject = 20 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (46XSJ) [2025-05-16 04:25:42] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JWZOT) [2025-05-16 04:25:42] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (5L9J2) [2025-05-16 04:25:42] select * from quarter where status = 1 order by id desc
+success: (67YA1) [2025-05-16 04:25:44] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 20 LEFT JOIN grades g ON u.id = g.student AND g.subject = 20 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (QK3OX) [2025-05-16 04:25:46] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (UFBX8) [2025-05-16 04:25:47] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (XIKPE) [2025-05-16 04:26:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (EWKRJ) [2025-05-16 04:26:17] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (EARGZ) [2025-05-16 04:26:17] select * from quarter where status = 1 order by id desc
+success: (GFERL) [2025-05-16 04:26:19] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 20 LEFT JOIN grades g ON u.id = g.student AND g.subject = 20 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 4 ORDER BY u.lastname, u.firstname ASC;
+success: (F8IJG) [2025-05-16 04:26:21] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (XBH89) [2025-05-16 04:26:23] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (7CUOV) [2025-05-16 04:26:38] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (L3PBZ) [2025-05-16 04:26:38] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (IDHO2) [2025-05-16 04:26:38] select * from quarter where status = 1 order by id desc
+success: (JFYIU) [2025-05-16 04:26:41] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (J6WAE) [2025-05-16 04:26:42] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (F6DS3) [2025-05-16 04:28:33] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (K6YDR) [2025-05-16 04:28:33] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (PVAO8) [2025-05-16 04:28:33] select * from quarter where status = 1 order by id desc
+success: (2NDFB) [2025-05-16 04:28:34] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (GNBR8) [2025-05-16 04:28:35] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (R9J6M) [2025-05-16 04:29:27] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (UYB73) [2025-05-16 04:29:27] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (MX3VS) [2025-05-16 04:29:27] select * from quarter where status = 1 order by id desc
+success: (KSOVU) [2025-05-16 04:29:28] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (8WPJB) [2025-05-16 04:29:29] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (YO5EH) [2025-05-16 04:29:45] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (TZI1W) [2025-05-16 04:29:45] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (I21GF) [2025-05-16 04:29:45] select * from quarter where status = 1 order by id desc
+success: (WBKFC) [2025-05-16 04:29:46] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (8V4KE) [2025-05-16 04:29:47] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (DXT85) [2025-05-16 04:30:09] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (YIUM4) [2025-05-16 04:30:09] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (5DVUW) [2025-05-16 04:30:09] select * from quarter where status = 1 order by id desc
+success: (T82SI) [2025-05-16 04:30:10] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (I2T9U) [2025-05-16 04:30:11] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (T9XCP) [2025-05-16 04:30:24] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (V1DFZ) [2025-05-16 04:30:24] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (AF9WR) [2025-05-16 04:30:24] select * from quarter where status = 1 order by id desc
+success: (G7MR4) [2025-05-16 04:30:25] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (O6UFE) [2025-05-16 04:30:26] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (9CTQR) [2025-05-16 04:40:46] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (OQNP2) [2025-05-16 04:40:46] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (Z3U2M) [2025-05-16 04:40:46] select * from quarter where status = 1 order by id desc
+success: (I7N3L) [2025-05-16 04:40:48] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 5
+success: (EWUJR) [2025-05-16 04:40:51] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (NSY53) [2025-05-16 04:40:52] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (8GUNE) [2025-05-16 04:41:28] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (UZGMY) [2025-05-16 04:41:28] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (KJDVI) [2025-05-16 04:41:28] select * from quarter where status = 1 order by id desc
+success: (QSWGZ) [2025-05-16 04:41:30] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (H7YKI) [2025-05-16 04:41:31] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (AGDUI) [2025-05-16 04:41:35] delete from grades where subject = 1 and student = 'TLM-0857289524432' and quarter = '1-mid'
+success: (CVE4L) [2025-05-16 04:41:35] INSERT INTO grades (subject, student, grade, status, quarter) VALUES (1, 'TLM-0857289524432', 88, 1, '1-mid')
+success: (O2563) [2025-05-16 04:41:37] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (Z1G29) [2025-05-16 04:41:42] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (SBLJT) [2025-05-16 04:41:47] delete from grades where subject = 1 and student = 'TLM-0857289524432' and quarter = '1-mid'
+success: (CGMU3) [2025-05-16 04:41:47] INSERT INTO grades (subject, student, grade, status, quarter) VALUES (1, 'TLM-0857289524432', 88, 1, '1-mid')
+success: (JPRTU) [2025-05-16 04:41:53] delete from grades where subject = 1 and student = 'TLM-0857289526' and quarter = '1-mid'
+success: (E6V28) [2025-05-16 04:41:53] INSERT INTO grades (subject, student, grade, status, quarter) VALUES (1, 'TLM-0857289526', 81, 1, '1-mid')
+success: (VHD9G) [2025-05-16 04:41:54] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (LFTE2) [2025-05-16 04:41:55] delete from grades where subject = 1 and student = 'TLM-0857289524432' and quarter = '1-mid'
+success: (HS796) [2025-05-16 04:41:55] INSERT INTO grades (subject, student, grade, status, quarter) VALUES (1, 'TLM-0857289524432', 88, 1, '1-mid')
+success: (WKVQF) [2025-05-16 04:41:57] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (MU9GN) [2025-05-16 04:41:57] select * from theme where id = 1
+success: (Z5LJE) [2025-05-16 04:41:57] update theme set theme = 'theme16' where id = 1
+success: (A3M4Z) [2025-05-16 04:42:01] SELECT s.id, s.`subject`,a.coursemajor, s.`description`, t.id 'teacherid', t.firstname, t.lastname, t.contact, a.date_createdd, a.`status` FROM assignment a, `subject` s, teachers t WHERE a.`subject` = s.id AND a.teacher = t.id and a.coursemajor = 1 order by s.`subject` asc
+success: (N5U3T) [2025-05-16 04:42:01] select * from quarter where status = 1 order by id desc
+success: (X6H7Q) [2025-05-16 04:42:05] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (H2QDF) [2025-05-16 04:43:01] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (VIAF2) [2025-05-16 04:43:01] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (L2XZF) [2025-05-16 04:43:01] select * from quarter where status = 1 order by id desc
+success: (78T26) [2025-05-16 04:43:04] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (XUWFJ) [2025-05-16 04:43:04] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (3E8AF) [2025-05-16 04:43:04] select * from quarter where status = 1 order by id desc
+success: (Z4C6W) [2025-05-16 04:43:15] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (Z3ENR) [2025-05-16 04:43:15] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (VA6XJ) [2025-05-16 04:43:15] select * from quarter where status = 1 order by id desc
+success: (XZWIA) [2025-05-16 05:03:47] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (92XO4) [2025-05-16 05:03:47] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (PX8O3) [2025-05-16 05:03:47] select * from quarter where status = 1 order by id desc
+success: (V5S61) [2025-05-16 05:13:47] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (DNGM2) [2025-05-16 05:13:47] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (VAUC1) [2025-05-16 05:13:47] select * from quarter where status = 1 order by id desc
+success: (5GD9U) [2025-05-16 05:15:25] select * from teachers
+success: (K2CET) [2025-05-16 05:15:25] select * from theme where id = 1
+success: (ESPB9) [2025-05-16 05:15:25] update theme set theme = 'theme16' where id = 1
+success: (1B7WJ) [2025-05-16 05:19:34] SELECT a.coursemajor, s.`subject`, a.teacher, s.id AS 'sid', a.id AS 'aid', s.description, g.id AS 'gid', g.grade, g.student, g.quarter FROM assignment a LEFT JOIN subject s ON a.subject = s.id LEFT JOIN grades g ON s.id = g.subject AND g.student = NULL AND g.quarter = 'Select Quarter' WHERE a.coursemajor = 0;
+success: (85IDC) [2025-05-16 05:19:37] SELECT a.coursemajor, s.`subject`, a.teacher, s.id AS 'sid', a.id AS 'aid', s.description, g.id AS 'gid', g.grade, g.student, g.quarter FROM assignment a LEFT JOIN subject s ON a.subject = s.id LEFT JOIN grades g ON s.id = g.subject AND g.student = NULL AND g.quarter = 'Select Quarter' WHERE a.coursemajor = 0;
+success: (2OYAD) [2025-05-16 05:22:09] select * from teachers where status = 1
+success: (CTR8H) [2025-05-16 05:22:18] select * from teachers where status = 1
+success: (OESYZ) [2025-05-16 05:23:01] select * from teachers where status = 1
+success: (7VA2P) [2025-05-16 05:23:12] select * from teachers where status = 1
+success: (2NGF9) [2025-05-16 05:25:40] select * from teachers where status = 1
+success: (IE2PY) [2025-05-16 05:26:36] select * from teachers where status = 1
+success: (EQLMY) [2025-05-16 05:26:38] update teachers set status = 0 where id = 1
+success: (ZY2U9) [2025-05-16 05:27:08] select * from teachers where status = 1
+success: (QSV2C) [2025-05-16 05:27:09] update teachers set status = 0 where id = 2
+success: (9DBEJ) [2025-05-16 05:27:10] select * from teachers where status = 1
+success: (GPJIL) [2025-05-16 05:27:32] select * from teachers where status = 1
+success: (GRW5T) [2025-05-16 05:34:01] select * from teachers where status = 1
+success: (1KAYG) [2025-05-16 05:35:15] select * from teachers where status = 1
+success: (U7FR6) [2025-05-16 05:35:48] select * from teachers where status = 1
+success: (O8VCR) [2025-05-16 05:36:17] select * from teachers where status = 1
+success: (BVIK3) [2025-05-16 05:36:29] INSERT INTO teachers (firstname, lastname, middlename, contact, address, username, password) VALUES ('Tyrone', 'm', '', '', '', '', 72e6)
+success: (B8YH1) [2025-05-16 05:39:59] select * from teachers where status = 1
+success: (9HMDF) [2025-05-16 05:40:49] select * from teachers where status = 1
+success: (96A1Q) [2025-05-16 05:41:22] select * from teachers where status = 1
+success: (OZB2H) [2025-05-16 05:41:49] select * from teachers where status = 1
+success: (I5Y8X) [2025-05-16 05:44:09] select * from teachers where status = 1
+success: (UNW9H) [2025-05-16 05:47:44] select * from teachers where status = 1
+success: (UIQE3) [2025-05-16 05:48:06] select * from teachers where status = 1
+success: (QISOD) [2025-05-16 05:48:43] select * from teachers where status = 1
+success: (4XR1J) [2025-05-16 05:49:37] SELECT * FROM teachers WHERE id = '1'
+success: (V5EIZ) [2025-05-16 05:49:39] UPDATE teachers SET username = 'testemail@email111', firstname = 'firstname', lastname = 'lastname', middlename = 'test', contact = 'test', address = 'test', modifydate = '2025-05-16 05:49:39' WHERE id = 1
+success: (HA6MK) [2025-05-16 05:49:40] select * from teachers
+success: (K58NO) [2025-05-16 05:49:40] select * from theme where id = 1
+success: (56CFO) [2025-05-16 05:49:41] update theme set theme = 'theme16' where id = 1
+success: (YMC36) [2025-05-16 05:49:53] SELECT * FROM teachers WHERE id = '2'
+success: (S7PDI) [2025-05-16 05:49:55] UPDATE teachers SET username = 'testemail@email1', firstname = 'test', lastname = 'test', middlename = 'test', contact = 'test', address = 'test', modifydate = '2025-05-16 05:49:55' WHERE id = 2
+success: (284N6) [2025-05-16 05:50:06] select * from teachers
+success: (4CZFA) [2025-05-16 05:50:06] select * from theme where id = 1
+success: (O1YH9) [2025-05-16 05:50:07] update theme set theme = 'theme16' where id = 1
+success: (3YTMI) [2025-05-16 05:50:08] SELECT * FROM teachers WHERE id = '2'
+success: (IUH51) [2025-05-16 05:50:09] UPDATE teachers SET username = 'testemail@email1', firstname = 'test', lastname = 'test', middlename = 'test', contact = 'test', address = 'test', modifydate = '2025-05-16 05:50:09' WHERE id = 2
+success: (UVAKF) [2025-05-16 05:50:10] select * from teachers
+success: (SV6NH) [2025-05-16 05:50:10] select * from theme where id = 1
+success: (1UQH4) [2025-05-16 05:50:11] update theme set theme = 'theme16' where id = 1
+success: (JVRLQ) [2025-05-16 05:52:02] select * from teachers where status = 1
+success: (WQD3B) [2025-05-16 05:52:06] UPDATE teachers SET username = 'testemail@email111', firstname = 'firstname', lastname = 'lastname', middlename = 'test', contact = 'test', address = 'test', modifydate = '2025-05-16 05:52:06' WHERE id = 1
+success: (OFS62) [2025-05-16 05:52:56] select * from teachers where status = 1
+success: (RQ14J) [2025-05-16 05:52:59] UPDATE teachers SET username = 'testemail@email111', firstname = 'firstname', lastname = 'lastname', middlename = 'test', contact = 'test', address = 'test', modifydate = '2025-05-16 05:52:59' WHERE id = 1
+success: (9RLUM) [2025-05-16 05:53:20] select * from teachers where status = 1
+success: (Q83RO) [2025-05-16 05:53:25] UPDATE teachers SET username = 'testemail@email111', firstname = 'firstname', lastname = 'lastname', middlename = 'testing', contact = 'test', address = 'test', modifydate = '2025-05-16 05:53:24' WHERE id = 1
+success: (AO6MC) [2025-05-16 05:53:26] select * from teachers where status = 1
+success: (NY6XG) [2025-05-16 06:08:21] select * from teachers where status = 1
+success: (RQO3F) [2025-05-16 06:08:27] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (RL2J8) [2025-05-16 06:08:27] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (G28BS) [2025-05-16 06:08:27] select * from quarter where status = 1 order by id desc
+success: (TSK2Z) [2025-05-16 06:08:34] select * from teachers where status = 1
+success: (WC64Z) [2025-05-16 06:08:41] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7Y51W) [2025-05-16 06:08:41] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (OZW62) [2025-05-16 06:08:41] select * from quarter where status = 1 order by id desc
+success: (RIDBK) [2025-05-16 07:48:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (5ZKTH) [2025-05-16 07:48:17] select * from theme where id = 1
+success: (IM8SO) [2025-05-16 07:48:18] update theme set theme = 'theme16' where id = 1
+success: (VI7BN) [2025-05-16 07:56:32] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (FIETL) [2025-05-16 08:01:51] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (VGY86) [2025-05-16 08:04:08] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (V87DT) [2025-05-16 08:07:33] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (NCW7D) [2025-05-16 08:08:30] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (35RJG) [2025-05-16 08:08:51] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7RFGV) [2025-05-16 08:08:52] select * from teachers where status = 1
+success: (WLP69) [2025-05-16 08:08:55] select * from teachers where status = 1
+success: (H96AC) [2025-05-16 08:08:57] select * from teachers where status = 1
+success: (643R7) [2025-05-16 08:09:00] select * from teachers where status = 1
+success: (4CYPQ) [2025-05-16 08:09:43] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (U95IN) [2025-05-16 08:09:46] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 5
+success: (TV34G) [2025-05-16 08:09:48] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (3TRPA) [2025-05-16 08:09:51] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 2
+success: (2NG4D) [2025-05-16 08:12:46] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (WJ8YR) [2025-05-16 08:12:46] select * from theme where id = 1
+success: (U7GZR) [2025-05-16 08:12:47] update theme set theme = 'theme16' where id = 1
+success: (BFIC9) [2025-05-16 08:12:49] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (RUZS3) [2025-05-16 08:12:55] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 5 ORDER BY c.course, c.major, c.`year`, c.section
+success: (8UOM6) [2025-05-16 08:15:16] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (FDLWO) [2025-05-16 08:15:23] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = NULL ORDER BY c.course, c.major, c.`year`, c.section
+success: (O5ZBR) [2025-05-16 08:15:25] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = NULL ORDER BY c.course, c.major, c.`year`, c.section
+success: (YSUCN) [2025-05-16 08:15:27] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = NULL ORDER BY c.course, c.major, c.`year`, c.section
+success: (39USK) [2025-05-16 08:15:42] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (WSECT) [2025-05-16 08:15:44] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (V8S9D) [2025-05-16 08:15:46] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 5 ORDER BY c.course, c.major, c.`year`, c.section
+success: (AM578) [2025-05-16 08:15:48] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (7FQBZ) [2025-05-16 08:18:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (B5MGL) [2025-05-16 08:18:19] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 5 ORDER BY c.course, c.major, c.`year`, c.section
+success: (BFGMO) [2025-05-16 08:18:21] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (E5N6Q) [2025-05-16 08:18:47] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (QW3PJ) [2025-05-16 08:32:36] select count(*) as 'total' from teachers where status = 1
+success: (67LIW) [2025-05-16 10:17:42] select count(*) as 'total' from teachers where status = 1
+success: (VDNGU) [2025-05-16 10:18:09] select count(*) as 'total' from teachers where status = 1
+success: (563W1) [2025-05-16 10:19:06] select count(*) as 'total' from teachers where status = 1
+success: (V4R73) [2025-05-16 10:19:32] select count(*) as 'total' from teachers where status = 1
+success: (39QU8) [2025-05-16 10:21:30] select count(*) as 'total' from teachers where status = 1
+error: (YDHTA) [2025-05-16 10:21:30] select count(*) as 'total' from students where type = 'student' and status = 1
+success: (T64OA) [2025-05-16 10:21:49] select count(*) as 'total' from teachers where status = 1
+error: (YZT3G) [2025-05-16 10:21:49] select count(*) as 'total' from students where type = 'student' and status = 1
+success: (LUW12) [2025-05-16 10:21:58] select count(*) as 'total' from teachers where status = 1
+error: (EZN6K) [2025-05-16 10:21:58] select count(*) as 'total' from students where type = 'student' and status = 1
+success: (YUP3E) [2025-05-16 10:22:29] select count(*) as 'total' from teachers where status = 1
+success: (Y7XT4) [2025-05-16 10:22:29] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (ICBYJ) [2025-05-16 10:25:25] select count(*) as 'total' from teachers where status = 1
+success: (81GUQ) [2025-05-16 10:25:25] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (G5QHP) [2025-05-16 10:25:25] SELECT c.course, COUNT(*) 'total' FROM coursemajor c GROUP BY c.course and c.status = 1
+success: (2MH7O) [2025-05-16 10:29:09] select count(*) as 'total' from teachers where status = 1
+success: (HTXFJ) [2025-05-16 10:29:09] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (8RI9P) [2025-05-16 10:29:09] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (71GTF) [2025-05-16 10:29:31] select count(*) as 'total' from teachers where status = 1
+success: (ZGTHK) [2025-05-16 10:29:31] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (2K1RV) [2025-05-16 10:29:31] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (LT8YC) [2025-05-16 10:37:58] select count(*) as 'total' from teachers where status = 1
+success: (9HFDK) [2025-05-16 10:37:58] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (ZE5BA) [2025-05-16 10:37:58] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (K81XS) [2025-05-16 10:37:58] SELECT * FROM login_logs ORDER BY date_log desc
+success: (2VWYN) [2025-05-16 10:38:37] select count(*) as 'total' from teachers where status = 1
+success: (2OQZ5) [2025-05-16 10:38:37] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (316VM) [2025-05-16 10:38:37] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (REMI1) [2025-05-16 10:38:37] SELECT * FROM login_logs ORDER BY date_log desc
+success: (LZ6IX) [2025-05-16 10:38:39] select * from teachers where status = 1
+success: (BXEPR) [2025-05-16 10:38:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (PX9OR) [2025-05-16 10:38:58] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (ZID4R) [2025-05-16 10:38:58] select * from quarter where status = 1 order by id desc
+success: (AVXM7) [2025-05-16 10:39:03] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 1
+success: (JG6DF) [2025-05-16 10:39:04] SELECT u.id AS 'userid', u.firstname, u.lastname, u.middlename, u.username, u.phone, a.coursemajor, a.subject, a.teacher, g.subject AS 'gsubject', u.coursemajor AS 'gcoursemajor', g.student, g.grade, g.quarter FROM users u LEFT JOIN coursemajor c ON u.coursemajor = c.id LEFT JOIN assignment a ON c.id = a.coursemajor AND a.subject = 1 LEFT JOIN grades g ON u.id = g.student AND g.subject = 1 AND g.quarter = '1-mid' LEFT JOIN QUARTER q ON g.quarter = q.id WHERE u.type = 'student' AND u.status = 1 AND u.coursemajor = 1 ORDER BY u.lastname, u.firstname ASC;
+success: (WQUHJ) [2025-05-16 10:39:10] select count(*) as 'total' from teachers where status = 1
+success: (KHL4B) [2025-05-16 10:39:10] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (M2H3C) [2025-05-16 10:39:10] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (2BTJX) [2025-05-16 10:39:10] SELECT * FROM login_logs ORDER BY date_log desc
+success: (NZET3) [2025-05-16 10:39:25] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (LK1ME) [2025-05-16 10:39:28] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (8FRPI) [2025-05-16 15:26:02] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (BQTYR) [2025-05-16 15:26:02] SELECT a.id 'aid', s.id 'sid', s.`subject`, s.`description`, a.coursemajor FROM assignment a LEFT JOIN `subject` s ON a.`subject` = s.id WHERE a.coursemajor = 4
+success: (6MHF3) [2025-05-16 15:26:02] select * from quarter where status = 1 order by id desc
+success: (V8CD7) [2025-05-16 15:26:15] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (9RN2D) [2025-05-16 15:26:18] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 5 ORDER BY c.course, c.major, c.`year`, c.section
+success: (U4COV) [2025-05-16 15:26:49] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (K2ZQ5) [2025-05-16 15:26:55] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (CLZA2) [2025-05-16 15:26:57] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (QNLXB) [2025-05-16 15:27:00] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 5 ORDER BY c.course, c.major, c.`year`, c.section
+success: (LH842) [2025-05-16 15:27:02] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 2 ORDER BY c.course, c.major, c.`year`, c.section
+success: (FTZSD) [2025-05-16 15:28:44] select * from users where username = 'tyronem@gmail.com' and password = 'password'
+success: (NTQ74) [2025-05-16 15:28:50] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-1143137101', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-16 15:28:50')
+success: (QJ4KD) [2025-05-16 15:28:53] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (IJ9SP) [2025-05-16 15:28:53] select * from theme where id = 1
+success: (93KFP) [2025-05-16 15:28:53] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (ZUDNL) [2025-05-16 15:28:53] update theme set theme = 'theme16' where id = 1
+success: (2Y3AZ) [2025-05-16 15:28:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (T6AWN) [2025-05-16 15:28:58] select * from theme where id = 1
+success: (BJKHN) [2025-05-16 15:28:58] update theme set theme = 'theme16' where id = 1
+success: (1U7ZY) [2025-05-16 15:28:59] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (5C3BA) [2025-05-16 15:28:59] select * from theme where id = 1
+success: (59AHY) [2025-05-16 15:29:00] update theme set theme = 'theme16' where id = 1
+success: (UERKV) [2025-05-16 15:29:02] select * from teachers
+success: (JIZ3H) [2025-05-16 15:29:02] select * from theme where id = 1
+success: (DSR3L) [2025-05-16 15:29:02] update theme set theme = 'theme16' where id = 1
+success: (7CFAT) [2025-05-16 15:29:03] select * from theme where id = 1
+success: (J5TVO) [2025-05-16 15:29:03] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (W3D6E) [2025-05-16 15:29:03] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (TCQBO) [2025-05-16 15:29:04] update theme set theme = 'theme16' where id = 1
+success: (XUA8W) [2025-05-16 15:33:29] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (4K8PE) [2025-05-16 15:33:59] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (CMU5R) [2025-05-16 15:34:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (J6QFR) [2025-05-16 15:39:03] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (TZQ9K) [2025-05-16 15:39:11] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (PVETH) [2025-05-16 15:39:35] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (LFIPZ) [2025-05-16 15:40:34] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (3ER6L) [2025-05-16 15:41:18] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (5W6IB) [2025-05-16 15:41:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (WKEI7) [2025-05-16 15:42:03] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (5AO8C) [2025-05-16 15:42:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (SXRCA) [2025-05-16 15:42:25] INSERT INTO subject (subject, description) VALUES ('Sub1', 'we')
+success: (843NA) [2025-05-16 15:42:25] INSERT INTO assignment (coursemajor, subject, date_createdd, date_modifieds, status) VALUES (4, 22, '2025-05-16 15:42:25', '2025-05-16 15:42:25', 1)
+success: (8GNV4) [2025-05-16 16:13:07] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (C3XZA) [2025-05-16 16:13:09] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (1LRZF) [2025-05-16 16:14:06] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (RUYA9) [2025-05-16 16:14:08] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (IB76F) [2025-05-16 16:20:39] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (IS4LF) [2025-05-16 16:20:41] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (DLGRB) [2025-05-16 16:20:45] update subject set status = 0 where id = 22
+success: (G26AK) [2025-05-16 16:21:01] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (MNVIC) [2025-05-16 16:21:02] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (FAUN6) [2025-05-16 16:21:18] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (TRKLP) [2025-05-16 16:21:18] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (MZJV8) [2025-05-16 16:21:19] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (BZ1IK) [2025-05-16 16:21:19] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (Q9TWL) [2025-05-16 16:21:19] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (MI4CZ) [2025-05-16 16:22:00] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (DJRY8) [2025-05-16 16:22:01] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (BWNE2) [2025-05-16 16:22:12] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (7IMGQ) [2025-05-16 16:22:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (HXZ8N) [2025-05-16 16:22:21] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 ORDER BY c.course, c.major, c.`year`, c.section
+success: (JE7DC) [2025-05-16 16:25:14] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JZXQL) [2025-05-16 16:25:16] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (U84VQ) [2025-05-16 16:25:46] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (UCDPK) [2025-05-16 16:25:48] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (WH9O2) [2025-05-16 16:25:50] update subject set status = 0 where id = 20
+success: (C5FOJ) [2025-05-16 16:25:52] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (9ABGE) [2025-05-16 16:26:38] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (H7ZB9) [2025-05-16 16:26:39] select * from theme where id = 1
+success: (75Z3Q) [2025-05-16 16:26:39] update theme set theme = 'theme16' where id = 1
+success: (H6UTV) [2025-05-16 16:26:42] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (TGPCS) [2025-05-16 16:28:34] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (K25BD) [2025-05-16 16:28:34] select * from theme where id = 1
+success: (2RC67) [2025-05-16 16:28:34] update theme set theme = 'theme16' where id = 1
+success: (IMVN1) [2025-05-16 16:28:35] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (6VS3Y) [2025-05-16 16:28:39] UPDATE subject SET status = 0 WHERE id = 21
+success: (PQ95T) [2025-05-16 16:28:40] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (KCWBV) [2025-05-16 16:28:57] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (ST492) [2025-05-16 16:33:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (NVS9Q) [2025-05-16 16:33:59] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (HQJDF) [2025-05-16 16:34:26] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (H2JBK) [2025-05-16 16:34:27] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (FXA3D) [2025-05-16 16:34:47] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (S9W3K) [2025-05-16 16:34:48] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (H2J1T) [2025-05-16 16:37:30] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (MG8AR) [2025-05-16 16:37:33] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (ZEGLJ) [2025-05-16 16:37:38] UPDATE subject SET subject = 'Communication', description = 'engcom' WHERE id = 21
+success: (SU61F) [2025-05-16 16:37:40] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (AEW9F) [2025-05-16 16:37:52] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7KZQU) [2025-05-16 16:37:53] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section
+success: (WY8AL) [2025-05-16 16:37:58] UPDATE subject SET subject = 'Sub1', description = 'wew' WHERE id = 22
+success: (78ATX) [2025-05-16 16:37:59] SELECT a.id, s.id 'subjectid', t.id 'teacherid', c.id 'courseid', c.course,c.major, c.`year`,a.`status` 'astatus', c.section, t.firstname, t.lastname, s.`subject`, s.`description`, a.date_createdd,a.date_modifieds  FROM assignment a LEFT join coursemajor c ON a.coursemajor = c.id LEFT join `subject` s ON a.`subject` = s.id LEFT join teachers t ON a.teacher = t.id WHERE  c.`status` = 1 and c.id = 4 and s.status = 1 ORDER BY c.course, c.major, c.`year`, c.section

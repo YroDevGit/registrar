@@ -169,7 +169,7 @@
         loadingpage(true);
         $response = await mypost("/Action/loginuser", $data);
         $backend = $response?.backend ?? [];
-        if($backend.code == 4){
+        if($backend.code == 4||$backend.code == 5){
           loadingpage(false);
           $errors =  $backend.errors;
           Swal.fire({

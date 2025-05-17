@@ -10,7 +10,7 @@
         $response = [
             "code" => getenv("error_code"),
             "status" => "Validation",
-            "message" => "Validation Failed",
+            "message" => "Please fill up all required fields",
             "errors" => Validate::$errors
         ];
         json_response($response);

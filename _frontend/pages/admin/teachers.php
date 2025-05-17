@@ -9,7 +9,7 @@
   <meta name="author" content="" />
   <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- loader-->
   <link href="<?= assets() ?>/css/pace.min.css" rel="stylesheet" />
   <script src="<?= assets() ?>/js/pace.min.js"></script>
@@ -43,19 +43,21 @@
     .dataTables_filter label input[type="search"] {
       color: white;
     }
-    .modal-content{
-        color:black;
+
+    .modal-content {
+      color: black;
     }
-    .row-y{
-        padding-top: 8px;
-        padding-bottom: 8px;
+
+    .row-y {
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
   </style>
 
   <!-- Bootstrap CSS -->
 
 
-<!-- Bootstrap JS and Popper.js (needed for modal) -->
+  <!-- Bootstrap JS and Popper.js (needed for modal) -->
 
 
 
@@ -141,39 +143,76 @@
       <!-- End container-fluid-->
 
       <!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-     
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Add teacher</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <form id="addteacher">
-      <!-- Modal Body -->
-      <div class="modal-body">
-        
-            <div class="form-group">
-            <?php form_input("Email", "username", "Email") ?>
-                <?php form_input("Firstname", "firstname", "First name") ?>
-                <?php form_input("Lastname", "lastname", "Last name") ?>
-                <?php form_input("Middlename", "middlename", "Middle name") ?>
-                <?php form_input("Contact", "contact", "Contact number") ?>
-                <?php form_input("Address", "address", "Address") ?>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add teacher</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-        
+            <form id="addteacher">
+              <!-- Modal Body -->
+              <div class="modal-body">
+
+                <div class="form-group">
+                  <?php form_input("Email", "username", "Email") ?>
+                  <?php form_input("Firstname", "firstname", "First name") ?>
+                  <?php form_input("Lastname", "lastname", "Last name") ?>
+                  <?php form_input("Middlename", "middlename", "Middle name") ?>
+                  <?php form_input("Contact", "contact", "Contact number") ?>
+                  <?php form_input("Address", "address", "Address") ?>
+                </div>
+
+              </div>
+
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
+
+
+      <div>
+        <div class="modal" id="editModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Edit teacher</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <form id="editteacher">
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                  <div class="form-group">
+                    <?php form_input_edit("Email", "username", "Email") ?>
+                    <?php form_input_edit("Firstname", "firstname", "First name") ?>
+                    <?php form_input_edit("Lastname", "lastname", "Last name") ?>
+                    <?php form_input_edit("Middlename", "middlename", "Middle name") ?>
+                    <?php form_input_edit("Contact", "contact", "Contact number") ?>
+                    <?php form_input_edit("Address", "address", "Address") ?>
+                  </div>
+
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      </form>
-    </div>
-  </div>
-</div>
 
     </div><!--End content-wrapper-->
     <!--Start Back To Top Button-->
@@ -192,71 +231,217 @@
 
     <!--start color switcher-->
     <?php include_page("admin/theme") ?>
-  <!--end color switcher-->
+    <!--end color switcher-->
   </div><!--End wrapper-->
 
 
   <!-- Bootstrap core JavaScript-->
   <script src="<?= assets() ?>/js/jquery.min.js"></script>
   <script src="<?= assets() ?>/js/popper.min.js"></script>
-  <script src="<?=assets()?>/js/bootstrap.min.js"></script>
+  <script src="<?= assets() ?>/js/bootstrap.min.js"></script>
 
   <!-- simplebar js -->
   <script src="<?= assets() ?>/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
   <script src="<?= assets() ?>/js/sidebar-menu.js"></script>
-  <script src="<?=assets()?>/js/jquery.loading-indicator.js"></script>
-  
+  <script src="<?= assets() ?>/js/jquery.loading-indicator.js"></script>
+
   <!-- Custom scripts -->
   <script src="<?= assets() ?>/js/app-script.js"></script>
-  <script src="<?=assets()?>/js/index.js"></script>
-  
-<script>
-  on_load(async()=>{
-    $result = await mypost("Teacher/get");
-    const table = new DataTable(document.querySelector("#teachertable"));
-    $data = $result?.backend?.data;
-    $data.forEach(column => {
-      $action = column.status == 2 ? ` <button class='btn btn-success'>ENABLE</button>` : `<button class='btn btn-danger'>DISABLE</button>`;
-      table.row.add([
-        column.id,
-        column.firstname,
-        column.lastname,
-        column.middlename,
-        `<a href="tel::${column.contact}">${column.contact}</a>`,
-        $action
-      ]).draw();
-    });
-  });
-</script>
-  <script>
-    on_submit("#addteacher", async()=>{
-        event.preventDefault();
-        $data = get_form_data("#addteacher");
-        $result = await mypost("teacher/add", $data);
-        $backend = $result?.backend;
-        if($backend.code == 200){
-            Swal.fire({
-                title: "Success",
-                text: $backend.message,
-                icon: "success"
-            }).then(()=>{
-                reload();
-            });
-        }
-        else{
-            Swal.fire({
-                title: "Error",
-                text: $backend.message,
-                icon: "error"
-            });
-        }
-    });
+  <script src="<?= assets() ?>/js/index.js"></script>
 
-    
+
+
+
+  <script>
+    function delbtn() {
+      document.querySelectorAll(".dbtn").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          Swal.fire({
+            title: "Are you sure?",
+            text: "Selected teacher will not be visible in any pages!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, disable it!"
+          }).then(async (result) => {
+            if (result.isConfirmed) {
+              $id = btn.getAttribute("num");
+              $result = await mypost("teacher/disable", {
+                id: $id
+              });
+              $backend = $result?.backend;
+              if ($backend.code == 200) {
+                Swal.fire({
+                  title: "Success",
+                  text: $backend.message,
+                  icon: "success"
+                }).then(() => {
+                  reload();
+                });
+              } else {
+                Swal.fire({
+                  title: "Error",
+                  text: $backend.message,
+                  icon: "error"
+                });
+              }
+            }
+          });
+        });
+      });
+    }
   </script>
 
- 
+  <script>
+    function enablebtn() {
+      document.querySelectorAll(".ebtn").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          Swal.fire({
+            title: "Are you sure?",
+            text: "Selected teacher will be visible in all pages!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, enable it!"
+          }).then(async (result) => {
+            if (result.isConfirmed) {
+              $id = btn.getAttribute("num");
+              $result = await mypost("teacher/enable", {
+                id: $id
+              });
+              $backend = $result?.backend;
+              if ($backend.code == 200) {
+                Swal.fire({
+                  title: "Success",
+                  text: $backend.message,
+                  icon: "success"
+                }).then(() => {
+                  reload();
+                });
+              } else {
+                Swal.fire({
+                  title: "Error",
+                  text: $backend.message,
+                  icon: "error"
+                });
+              }
+            }
+          });
+        });
+      });
+    }
+  </script>
+
+  <script>
+    function editbtn() {
+      document.querySelectorAll(".editbtn").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          new bootstrap.Modal(document.getElementById('editModal')).show();
+          $id = btn.getAttribute("num");
+          $result = await mypost("teacher/getbyid", {
+            id: $id
+          });
+          $backend = $result?.backend;
+          if ($backend.code == 200) {
+            $data = $backend.first_row;
+            $("#username1").val($data.username);
+            $("#firstname1").val($data.firstname);
+            $("#lastname1").val($data.lastname);
+            $("#middlename1").val($data.middlename);
+            $("#contact1").val($data.contact);
+            $("#address1").val($data.address);
+            editSubmit($id);
+          } else {
+            Swal.fire({
+              title: "Error",
+              text: $backend.message,
+              icon: "error"
+            });
+          }
+        });
+      });
+    }
+  </script>
+
+  <script>
+    function editSubmit(id) {
+      on_submit("#editteacher", async () => {
+        event.preventDefault();
+        $data = get_form_data("#editteacher");
+        $data["id"] = id;
+        $result = await mypost("teacher/update",$data);
+        $backend = $result?.backend;
+        if ($backend.code == 200) {
+          Swal.fire({
+            title: "Success",
+            text: $backend.message,
+            icon: "success"
+          }).then(() => {
+            reload();
+          });
+        } else {
+          Swal.fire({
+            title: "Error",
+            text: $backend.message,
+            icon: "error"
+          });
+        }
+      });
+    }
+  </script>
+
+  <script>
+    on_load(async () => {
+      $result = await mypost("Teacher/get");
+      const table = new DataTable(document.querySelector("#teachertable"));
+      $data = $result?.backend?.data;
+      $data.forEach(column => {
+        $action = column.status == 0 ? ` <button class='btn btn-success ebtn' num='${column.id}'>ENABLE</button>` : `<button class='btn btn-danger dbtn' num='${column.id}'>DISABLE</button>`;
+        table.row.add([
+          column.id,
+          column.firstname,
+          column.lastname,
+          column.middlename,
+          `<a href="tel::${column.contact}">${column.contact}</a>`,
+          `<button class='btn btn-primary editbtn' num='${column.id}'>EDIT</button> `+$action
+        ]).draw();
+      });
+      delbtn();
+      enablebtn();
+      editbtn();
+    });
+  </script>
+  <script>
+    on_submit("#addteacher", async () => {
+      event.preventDefault();
+      $data = get_form_data("#addteacher");
+      $result = await mypost("teacher/add", $data);
+      $backend = $result?.backend;
+      if ($backend.code == 200) {
+        Swal.fire({
+          title: "Success",
+          text: $backend.message,
+          icon: "success"
+        }).then(() => {
+          reload();
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: $backend.message,
+          icon: "error"
+        });
+      }
+    });
+  </script>
+
+
+
+
+
 
 
 </body>

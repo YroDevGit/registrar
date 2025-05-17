@@ -13,8 +13,17 @@
         input("username"),
         input("password")
     );
+    
     $result = execute_select($sql, $param);
+    
+    
     if($result['code']==SUCCESS && ! empty($result['firstrow'] ?? [])){
+        if($result['firstrow']['status'] == 0){
+            $result['code'] = 5;
+            $result['errors'] = "Your account is not activated yet.";
+            $result['message'] = "Your account is not activated yet.";
+            json_response($result);
+        }
         $frow = $result['firstrow'];
         $_SESSION['fullname'] = $frow['firstname']." ".$frow['middlename']." ".$frow['lastname'];
         $_SESSION['id'] = $frow['id'];
@@ -23,11 +32,6 @@
         $_SESSION['coursemajor'] = $frow['coursemajor'];
     }
     if(post("notificationsEnabled") && $result['code']==SUCCESS){
-        unset($result['firstrow']['img']);
-        unset($result['firstrow']['phone']);
-        unset($result['firstrow']['address']);
-        unset($result['firstrow']['createdate']);
-        unset($result['firstrow']['modifydate']);
         json_response($result);
     }
     

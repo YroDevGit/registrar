@@ -1,0 +1,9 @@
+ERROR: (PWX4A) [2025-05-16 02:45:14] SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+ERROR: (W7MA2) [2025-05-16 02:54:36] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.quarters' doesn't exist
+ERROR: (SATFI) [2025-05-16 02:54:39] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.quarters' doesn't exist
+ERROR: (VJGY2) [2025-05-16 02:54:40] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.quarters' doesn't exist
+ERROR: (MJNH6) [2025-05-16 02:54:41] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.quarters' doesn't exist
+ERROR: (XRGO4) [2025-05-16 10:21:30] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.students' doesn't exist
+ERROR: (LUVF3) [2025-05-16 10:21:49] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.students' doesn't exist
+ERROR: (T3Z2G) [2025-05-16 10:21:58] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.students' doesn't exist
+ERROR: (X9C6R) [2025-05-16 15:25:51] SQLSTATE[HY000] [2006] MySQL server has gone away

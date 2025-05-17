@@ -1,0 +1,49 @@
+success: (5MIT9) [2025-05-08 14:29:47] SELECT u.id, u.username, u.`password`, u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (WLN43) [2025-05-08 14:29:47] select * from theme where id = 1
+success: (IOPE7) [2025-05-08 14:29:48] update theme set theme = 'theme9' where id = 1
+success: (EWB79) [2025-05-08 15:42:13] select * from users where username = 'tyrone2@gmail.comm' and password = 'dasdas'
+success: (6WFBI) [2025-05-08 15:42:17] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-0857289526', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-08 15:42:17')
+success: (RU1BJ) [2025-05-08 15:42:19] select * from quarter where status = 1 order by id desc
+success: (8LCRV) [2025-05-08 15:42:30] select * from users where username = 'tyronem@gmail.com' and password = 'password'
+success: (JYS1B) [2025-05-08 15:42:31] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-1143137101', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-08 15:42:31')
+success: (JV9PE) [2025-05-08 15:42:33] SELECT u.id, u.username, u.`password`, u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (RB84C) [2025-05-08 15:42:33] select * from theme where id = 1
+success: (5I3PJ) [2025-05-08 15:42:33] update theme set theme = 'theme9' where id = 1
+success: (GPUJI) [2025-05-08 15:42:41] update theme set theme = 'theme16' where id = 1
+success: (34JUZ) [2025-05-08 15:42:42] update theme set theme = 'theme15' where id = 1
+success: (B4ZXD) [2025-05-08 15:42:43] update theme set theme = 'theme16' where id = 1
+success: (2AI5O) [2025-05-08 15:42:48] update theme set theme = 'theme16' where id = 1
+success: (VGK2F) [2025-05-08 15:42:48] update theme set theme = 'theme16' where id = 1
+success: (7V8SB) [2025-05-08 15:42:49] update theme set theme = 'theme16' where id = 1
+success: (ORH4Y) [2025-05-08 15:42:49] update theme set theme = 'theme16' where id = 1
+success: (9P6SV) [2025-05-08 15:42:59] SELECT u.id, u.username, u.`password`, u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (7XOBD) [2025-05-08 15:42:59] select * from theme where id = 1
+success: (8SJ4T) [2025-05-08 15:43:00] update theme set theme = 'theme16' where id = 1
+success: (1YTUD) [2025-05-08 15:43:05] update theme set theme = 'theme16' where id = 1
+success: (QY4ZH) [2025-05-08 15:43:07] update theme set theme = 'theme16' where id = 1
+success: (G8X9Q) [2025-05-08 15:43:07] update theme set theme = 'theme16' where id = 1
+success: (X5GFA) [2025-05-08 15:43:12] update theme set theme = 'theme16' where id = 1
+success: (85VA9) [2025-05-08 15:43:15] update theme set theme = 'theme16' where id = 1
+success: (T7YDQ) [2025-05-08 15:44:02] SELECT u.id, u.username, u.`password`, u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (2X8G5) [2025-05-08 15:44:02] select * from theme where id = 1
+success: (BMDZC) [2025-05-08 15:44:03] update theme set theme = 'theme16' where id = 1
+success: (A59DT) [2025-05-08 15:44:06] update theme set theme = 'theme16' where id = 1
+success: (E46RX) [2025-05-08 15:44:07] update theme set theme = 'theme15' where id = 1
+success: (XKJYZ) [2025-05-08 15:44:07] update theme set theme = 'theme16' where id = 1
+success: (BVDNI) [2025-05-08 15:45:38] SELECT u.id, u.username, u.`password`, u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (2DU1G) [2025-05-08 15:45:38] select * from theme where id = 1
+success: (PM3EG) [2025-05-08 15:45:39] update theme set theme = 'theme16' where id = 1
+success: (8IYXB) [2025-05-08 15:45:42] update theme set theme = 'theme16' where id = 1
+success: (C476G) [2025-05-08 15:46:27] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (P1ROD) [2025-05-08 15:46:27] select * from theme where id = 1
+success: (AXJF7) [2025-05-08 15:46:28] update theme set theme = 'theme16' where id = 1
+success: (8EZPA) [2025-05-08 15:46:51] SELECT u.id, u.username, u.`password`, u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (18YLI) [2025-05-08 15:46:51] select * from theme where id = 1
+success: (52ECU) [2025-05-08 15:46:52] update theme set theme = 'theme16' where id = 1
+success: (QG5P9) [2025-05-08 15:47:39] select * from teachers
+success: (YDPIZ) [2025-05-08 15:47:39] select * from theme where id = 1
+success: (ZKGHW) [2025-05-08 15:47:39] update theme set theme = 'theme16' where id = 1

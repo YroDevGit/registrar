@@ -56,10 +56,12 @@
     select option {
       background-color: white;
     }
-    .f-18{
+
+    .f-18 {
       font-size: 18px;
     }
-    .form-control[readonly]{
+
+    .form-control[readonly] {
       background-color: white;
     }
   </style>
@@ -187,6 +189,37 @@
         </div>
       </div>
 
+      <!-- Edit Subject Modal -->
+      <div class="modal" id="editModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Edit Subject</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <form id="editsub">
+              <!-- Modal Body -->
+              <div class="modal-body">
+
+                <div class="form-group">
+                  <?php form_input_edit("Subject", "subject", "Subject name") ?>
+                  <?php form_input_edit("Description", "description", "Description") ?>
+                </div>
+                <input type="hidden" name="subjectid" id="subjectid">
+              </div>
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+ 
+
 
       <div class="modal" id="addteachmodal">
         <div class="modal-dialog">
@@ -261,6 +294,61 @@
   <script src="<?= assets() ?>/js/app-script.js"></script>
   <script src="<?= assets() ?>/js/index.js"></script>
 
+
+  <script>
+    $editmodal = new bootstrap.Modal(document.querySelector("#editModal"));
+    function showModalEdit() {
+      document.querySelectorAll(".editbtn").forEach(ebtn => {
+        ebtn.onclick = async function() {
+
+          $id = this.getAttribute("subid");
+          $api = await  mypost("Subject/getsubjectbyid", {
+            id: $id
+          });
+          $backend = $api.backend;
+          if ($backend.code == 200) {
+            $data = $backend.first_row;
+            $editmodal.show();
+            set_input_value("#subject1", $data.subject ?? "Nope");
+            set_input_value("#description1", $data.description);
+            set_input_value("#subjectid", $data.id);
+            document.querySelector("#editsub").addEventListener("submit", async (event) => {
+              event.preventDefault();
+              editSubmit();
+            });
+          }
+        }
+      });
+    } 
+  </script>
+
+  <script>
+    async function editSubmit(){
+      $data = get_form_data("#editsub");
+      $api = await mypost("Subject/edit", $data);
+      $backend = $api.backend;
+      if ($backend.code == 200) {
+        Swal.fire({
+          title: "Success",
+          text: $backend.message,
+          icon: "success"
+        }).then(() => {
+          $editmodal.hide();
+          $id = selected_value("#coursemajor");
+          showSubjects($id);
+        });
+        return;
+      }
+      Swal.fire({
+        title: "Error",
+        text: $backend.message,
+        icon: "error"
+      }).then(() => {
+        //$("#myModal").modal("hide");
+      });
+    }
+  </script>
+
   <script>
     on_load(async () => {
       $result = await mypost("Action/getactivecourse");
@@ -268,7 +356,7 @@
       $data = $backend.data ?? [];
 
       $data.forEach(column => {
-        $cm = column.course + ' ' + column.major + " " + column.year + "-" + column.section;
+        $cm = column.course + ' ' + column.major + " " + column.year + "-" + column.section + " (" + column.sem + ")";
         add_html("#coursemajor", `<option value='${column.id}'>${$cm}</option>`);
       });
     });
@@ -276,7 +364,7 @@
 
     document.querySelector("#coursemajor").onchange = async function() {
       $val = this.value;
-      showSubjects($val);
+      await showSubjects($val);
     }
 
     async function showSubjects(val) {
@@ -291,57 +379,60 @@
       $data.forEach(column => {
         $status = column.astatus;
         $deletebtn = ``;
-        if($status == 1){
+        if ($status == 1) {
           $deletebtn = `<button class='btn btn-danger delbtn'  btn-data="${column.subjectid}" kr="1"><b class="zmdi zmdi-block-alt f-18"></b></button>`;
-        }else{
+        } else {
           $deletebtn = `<button class='btn btn-success delbtn' btn-data="${column.subjectid}" kr="0"><b class="zmdi zmdi-chart-donut f-18"></b></button>`;
         }
+        $editbtn = `<button class='btn btn-secondary editbtn' subid='${column.subjectid}'><b class="zmdi zmdi-edit f-18"></b></button>`;
         $teachername = column.teacherid == null ? "---" : column.firstname + " " + column.lastname;
         $table.row.add([
           column.subject,
           column.description,
           column.date_createdd,
           $teachername,
-          `<button class='btn btn-primary'  onclick="showModal(${column.id}, '${$teachername}', '${column.subject}', '${column.subjectid}')"><b class="zmdi zmdi-accounts-add f-18"></b></button> `+$deletebtn
+          `<button class='btn btn-primary'  onclick="showModal(${column.id}, '${$teachername}', '${column.subject}', '${column.subjectid}')"><b class="zmdi zmdi-accounts-add f-18"></b></button> ` + $editbtn+" "+ $deletebtn
         ]).draw();
       });
       fordel();
+      showModalEdit();
     }
 
-    function fordel(){
-        $delbtn = document.querySelectorAll(".delbtn");
-        $delbtn.forEach(btn => {
-          btn.onclick = function(){
-            $id = this.getAttribute("btn-data");
-            $kr = this.getAttribute("kr");
-            $name = this.innerHTML;
-            $type = $kr == 0 ? "restore" : "remove";
-            Swal.fire({
-              title: "Confirmation",
-              text: `Are you sure to ${$type} selected subject`,
-              icon: "question",
-              showCancelButton: true
-            }).then(async(result)=>{
-              if(result.isConfirmed){
-                $api = await mypost("subject/disable",{id:$id, toggle: $kr});
-                $backend = $api.backend;
-                if($backend.code == 200){
-                  Swal.fire(
-                    {
-                      title: "Success",
-                      text: $kr == 1 ? "Subject removed" : "Subject restored",
-                      icon: "success"
-                      }
-                  ).then(()=>{
-                    $currentcourse = selected_value("#coursemajor");
-                    showSubjects($currentcourse);
-                  });
-                }
+    function fordel() {
+      $delbtn = document.querySelectorAll(".delbtn");
+      $delbtn.forEach(btn => {
+        btn.onclick = function() {
+          $id = this.getAttribute("btn-data");
+          $kr = this.getAttribute("kr");
+          $name = this.innerHTML;
+          $type = $kr == 0 ? "restore" : "remove";
+          Swal.fire({
+            title: "Confirmation",
+            text: `Are you sure to ${$type} selected subject`,
+            icon: "question",
+            showCancelButton: true
+          }).then(async (result) => {
+            if (result.isConfirmed) {
+              $api = await mypost("subject/disable", {
+                id: $id,
+                toggle: $kr
+              });
+              $backend = $api.backend;
+              if ($backend.code == 200) {
+                Swal.fire({
+                  title: "Success",
+                  text: $kr == 1 ? "Subject removed" : "Subject restored",
+                  icon: "success"
+                }).then(() => {
+                  $currentcourse = selected_value("#coursemajor");
+                  showSubjects($currentcourse);
+                });
               }
-            });
-          }
-        });
-      }
+            }
+          });
+        }
+      });
+    }
 
     let selcourse = 0;
     let selsub = 0;
@@ -355,29 +446,29 @@
       document.querySelector("#tname").value = $teacher;
     }
 
-    on_submit("#addteach", async()=>{
+    on_submit("#addteach", async () => {
       event.preventDefault();
       $newteach = get_value("#newteacher");
       $data = {
         newteach: $newteach,
-        subid : selsub,
-        courseid : selcourse
+        subid: selsub,
+        courseid: selcourse
       };
 
       $api = await mypost("subject/addteacher", $data);
       $backend = $api.backend;
 
-      if($backend.code == 200){
+      if ($backend.code == 200) {
         Swal.fire({
           title: "Success",
           text: "Teacher assigned",
           icon: "success"
-        }).then(()=>{
+        }).then(() => {
           $("#addteachmodal").modal("hide");
           $currentcourse = selected_value("#coursemajor");
           showSubjects($currentcourse);
         });
-      }else{
+      } else {
         Swal.fire({
           title: "Error",
           text: $backend.message,
@@ -389,11 +480,11 @@
     async function showActiveTeachers() {
       $api = await mypost("Teacher/getactive");
       $backend = $api.backend;
-      set_html("#newteacher",'');
-      if($backend.code == 200){
+      set_html("#newteacher", '');
+      if ($backend.code == 200) {
         $data = $backend.data;
         $data.forEach(column => {
-          $fullname = column.firstname+" "+column.lastname;
+          $fullname = column.firstname + " " + column.lastname;
           add_html("#newteacher", `<option value='${column.id}'>${$fullname}</option>`)
         });
       }
@@ -434,8 +525,6 @@
 
 
     });
-
-      
   </script>
 
 

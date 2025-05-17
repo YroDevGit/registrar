@@ -87,6 +87,7 @@ $(function () {
     $('#theme13').click(theme13);
     $('#theme14').click(theme14);
     $('#theme15').click(theme15);
+    $('#theme16').click(theme16);
     $('#themeschool').click(themeschool);
 
     function theme1() {
@@ -151,6 +152,10 @@ $(function () {
 	
 	function theme15() {
       $('body').attr('class', 'bg-theme bg-theme15');
+    }
+
+    function theme16() {
+      $('body').attr('class', 'bg-theme bg-theme16');
     }
 
 

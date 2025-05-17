@@ -1,0 +1,6 @@
+ERROR: (PCSVR) [2025-05-17 04:47:17] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.course' doesn't exist
+ERROR: (BMV8H) [2025-05-17 04:47:25] (ERROR) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'registrar.course' doesn't exist
+ERROR: (GZSF3) [2025-05-17 05:25:51] (ERROR) SQLSTATE[42S22]: Column not found: 1054 Unknown column 'quarter' in 'field list'
+ERROR: (NOCEY) [2025-05-17 06:42:19] (ERROR) SQLSTATE[HY093]: Invalid parameter number
+ERROR: (1SWCY) [2025-05-17 06:42:20] (ERROR) SQLSTATE[HY093]: Invalid parameter number
+ERROR: (6TA89) [2025-05-17 06:42:25] (ERROR) SQLSTATE[HY093]: Invalid parameter number

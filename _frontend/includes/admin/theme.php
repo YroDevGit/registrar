@@ -29,6 +29,7 @@
             <li id="theme13" onclick="changeTheme('theme13')"></li>
             <li id="theme14" onclick="changeTheme('theme14')"></li>
             <li id="theme15" onclick="changeTheme('theme15')"></li>
+            <li id="theme16" onclick="changeTheme('theme16')"></li>
         </ul>
 
     </div>

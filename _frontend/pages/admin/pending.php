@@ -102,6 +102,23 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">List of users</h5>
+                <div style="padding:10px 0px 10px 0px;width:660px;display:flex;">
+                  <div style="width: 30%;">
+                    <select name="filter" id="filter" class="form-control" style="color:white;background:black;">
+                      <option value="all">All</option>
+                      <option value="active">Active</option>
+                      <option value="inactive">Inactive</option>
+                      <option value="pending">Pending</option>
+                    </select>
+                  </div>
+
+                  <div style="width:auto;">
+                    <select name="scourse" id="scourse" class="form-control" style="color:white;background:black;">
+                      <option value="0">All</option>
+                    </select>
+                  </div>
+                  
+                </div>
                 <div class="table-responsive">
                   <table class="table table-hover" id="example">
                     <thead>
@@ -147,7 +164,29 @@
       
       <!-- Modal Body -->
       <div class="modal-body">
-        This is a simple Bootstrap modal.
+        <div align='center'>
+          <img src="" height="200" width="200" id="upict" alt="">
+        </div>
+        <div>
+          <div class="text-dark">Fullname</div>
+          <div><span id="fullname" class="form-control"></span></div>
+        </div>
+        <div>
+          <div class="text-dark">ID#</div>
+          <div><span id="ID" class="form-control"></span></div>
+        </div>
+        <div>
+          <div class="text-dark">Birthdate</div>
+          <div><span id="bdate" class="form-control"></span></div>
+        </div>
+        <div>
+          <div class="text-dark">Phone</div>
+          <div><span id="phone" class="form-control"></span></div>
+        </div>
+        <div>
+          <div class="text-dark">Address</div>
+          <div><span id="address" class="form-control"></span></div>
+        </div>
       </div>
       
       <!-- Modal Footer -->
@@ -190,13 +229,40 @@
 
   <!-- Custom scripts -->
   <script src="<?= assets() ?>/js/app-script.js"></script>
+
+  <script>
+   async function loadUserDisplay(){
+    document.querySelectorAll(".idfield").forEach(element => {
+      element.onclick = async function(){
+        $idfield = this.getAttribute("idfield");
+        $api = await mypost("Students/getbyid", {id:$idfield});
+        $backend = $api.backend;
+        if($backend.code == 200){
+          $frow = $backend.first_row;
+          $fullname = $frow.firstname+" "+$frow.middlename+" "+$frow.lastname;
+          set_html("#fullname", `${$fullname}`);
+          set_html("#ID", `${$frow.id}`);
+          set_html("#bdate", `${$frow.birthdate}`);
+          set_html("#phone", `${$frow.phone || 'not set'}`);
+          set_html("#address", `${$frow.address || 'not set'}`);
+          document.querySelector("#upict").src = $frow.img;
+          const modal = new bootstrap.Modal(document.getElementById('myModal'));
+          modal.show();
+        }else{
+          alert($backend.message);
+        }
+        
+      }
+   });
+   }
+  </script>
   
   <script>
     const table = document.querySelector("#example");
     const dataTable = new DataTable(table);
 
-    async function approveStudent(id) {
-      $post = {"id":id, "status":1};
+    async function approveStudent(id, coursemajor) {
+      $post = {"id":id, "status":1, coursemajor: coursemajor};
 
       confirmMessage("Are you sure to proceed?", async()=>{
         const result = await mypost('/Students/approvestudent', $post);
@@ -213,7 +279,19 @@
       }
       });
 
-      
+    }
+
+    async function loadCourses(){
+      $res = await mypost("action/getactivecourse");
+      $backend = $res.backend;
+      if($backend.code == 200){
+        $data = $backend.data ?? [];
+
+        $data.forEach(column => {
+          $course = column.course+" "+column.major+" "+column.year+"-"+column.section+" ("+column.sem+")";
+          add_html("#scourse", `<option value='${column.id}'>${$course}</option>`)
+        });
+      }
     }
 
     async function ignoreStudent(id) {
@@ -235,14 +313,27 @@
       
     }
 
-    on_load(async function() {
-      $data = await myget( '/Students/getStudents');
+    document.querySelector("#filter").addEventListener("change",async function(){
+      await loadStudents();
+    });
+
+    document.querySelector("#scourse").addEventListener("change",async function(){
+      await loadStudents();
+    });
+
+
+    async function loadStudents(){
+      $filter = selected_value("#filter");
+      $scourse = selected_value("#scourse");
+      $param = {filter:$filter, scourse: $scourse};
+      $data = await mypost( '/Students/getStudents', $param);
       $data = $data?.backend?.data ?? [];
+      dataTable.clear().draw();
       $data.forEach(column => {
         $status = column.userstat;
         $btn = ``;
         if ($status == 0) {
-          $btn = `<button class="btn btn-success" onclick="approveStudent('${column.id}')">Approve</button> <button class="btn btn-danger" onclick="ignoreStudent('${column.id}')">Decline</button>`;
+          $btn = `<button class="btn btn-success" onclick="approveStudent('${column.id}', '${column.cmajor}')">Approve</button> <button class="btn btn-danger" onclick="ignoreStudent('${column.id}')">Decline</button>`;
         } else {
           $btn = `<button class="btn btn-grey" onclick="">Approve</button> <button class="btn btn-danger">Disable</button>`;
         }
@@ -251,13 +342,22 @@
           column.firstname,
           column.lastname,
           column.middlename,
-          `<label data-toggle="modal" data-target="#myModal">${column.id}</label>`,
+          `<label class='idfield' idfield='${column.id}'>${column.id}</label>`,
           column.course + " " + column.major + "-" + column.year + "-" + column.section,
           $btn
 
         ]).draw();
       });
-    });
+    }
+
+ 
+$(document).ready(async function() {
+      await loadCourses();
+      await loadStudents(); 
+      await loadUserDisplay();
+});
+
+    
   </script>
 
   <script>

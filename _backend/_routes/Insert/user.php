@@ -1,9 +1,17 @@
 <?php 
     //Add codes here...
+        
     $firstname = input('firstname');
     $lastname = input('lastname');
     $middlename = input('middlename');
-    $type = decrypt(post("usertype"));
+    $type = "";
+    $java  = post("java");
+
+    if($java == "1"){
+        $type = post("usertype");
+    }else{
+        $type = decrypt(post("usertype"));
+    }
 
     $id = $firstname[0].$lastname[0].$middlename[0].date("Ymdhis");
     $user = array(
@@ -24,6 +32,7 @@
     $result = execute_insert("users", $user);
     if($result['code']==SUCCESS){
         if($type=="student"){
+            my_log(json_encode(postdata()));
             $data = array(
                 "userid" => $id,
                 "primaryed" => post("primaryed"),
@@ -37,5 +46,6 @@
             execute_insert("details", $data);
         }
     }
+
     json_response($result);
 ?>

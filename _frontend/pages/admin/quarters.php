@@ -9,7 +9,7 @@
   <meta name="author" content="" />
   <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- loader-->
   <link href="<?= assets() ?>/css/pace.min.css" rel="stylesheet" />
   <script src="<?= assets() ?>/js/pace.min.js"></script>
@@ -43,19 +43,21 @@
     .dataTables_filter label input[type="search"] {
       color: white;
     }
-    .modal-content{
-        color:black;
+
+    .modal-content {
+      color: black;
     }
-    .row-y{
-        padding-top: 8px;
-        padding-bottom: 8px;
+
+    .row-y {
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
   </style>
 
   <!-- Bootstrap CSS -->
 
 
-<!-- Bootstrap JS and Popper.js (needed for modal) -->
+  <!-- Bootstrap JS and Popper.js (needed for modal) -->
 
 
 
@@ -139,35 +141,67 @@
       <!-- End container-fluid-->
 
       <!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-     
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Add new quarter</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <form id="addquarter">
-      <!-- Modal Body -->
-      <div class="modal-body">
-        
-            <div class="form-group">
-                <?php form_input("Quarter", "quarter", "quarter") ?>
-                <?php form_input("Description", "description", "Last name") ?>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add new quarter</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-        
+            <form id="addquarter">
+              <!-- Modal Body -->
+              <div class="modal-body">
+
+                <div class="form-group">
+                  <?php form_input("Quarter", "quarter", "quarter") ?>
+                  <?php form_input("Description", "description", "Last name") ?>
+                </div>
+
+              </div>
+
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
+
+  <!-- Edit modal -->
+  <div class="modal" id="editModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Quarter</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <form id="editquarter">
+          <!-- Modal Body -->
+          <div class="modal-body">
+
+            <div class="form-group">
+              <?php form_input_edit("Quarter", "quarter", "quarter") ?>
+              <?php form_input_edit("Description", "description", "Last name") ?>
+            </div>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
-      </form>
     </div>
   </div>
-</div>
+
+      <!--End edit modal-->
+
 
     </div><!--End content-wrapper-->
     <!--Start Back To Top Button-->
@@ -186,91 +220,154 @@
 
     <!--start color switcher-->
     <?php include_page("admin/theme") ?>
-  <!--end color switcher-->
+    <!--end color switcher-->
   </div><!--End wrapper-->
 
 
   <!-- Bootstrap core JavaScript-->
   <script src="<?= assets() ?>/js/jquery.min.js"></script>
   <script src="<?= assets() ?>/js/popper.min.js"></script>
-  <script src="<?=assets()?>/js/bootstrap.min.js"></script>
+  <script src="<?= assets() ?>/js/bootstrap.min.js"></script>
 
   <!-- simplebar js -->
   <script src="<?= assets() ?>/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
   <script src="<?= assets() ?>/js/sidebar-menu.js"></script>
-  <script src="<?=assets()?>/js/jquery.loading-indicator.js"></script>
-  
+  <script src="<?= assets() ?>/js/jquery.loading-indicator.js"></script>
+
   <!-- Custom scripts -->
   <script src="<?= assets() ?>/js/app-script.js"></script>
-  <script src="<?=assets()?>/js/index.js"></script>
-  
-<script>
-  on_load(async()=>{
-    $result = await mypost("Quarters/get", {here:1});
-    const table = new DataTable(document.querySelector("#teachertable"));
-    $data = $result?.backend?.data;
-    $data.forEach(column => {
-      $action = column.status == 0 ? ` <button class='btn btn-success delb' stat = '1' num = '${column.id}'>ENABLE</button>` : `<button class='btn btn-danger delb' stat = '0'  num = '${column.id}'>DISABLE</button>`;
-      table.row.add([
-        column.id,
-        column.description,
-        column.date_added,
-        $action
-      ]).draw();
-    });
-    deleteQuarter();
-  });
+  <script src="<?= assets() ?>/js/index.js"></script>
 
-  function deleteQuarter(){
-    $allDeleteQ = document.querySelectorAll(".delb");
-    $allDeleteQ.forEach(element => {
-        element.onclick = async function(){
-            $id = element.getAttribute("num");
-            $stat = element.getAttribute("stat");
-            $api = await mypost("Quarters/update", {stat:$stat, id:$id});
-            $backend = $api.backend;
-            if($backend.code == 200){
-                Swal.fire({
-                    title: "Success",
-                    text: "Quarter updated",
-                    icon: "success"
-                }).then(()=>{
-                    reload();
-                })
-            }
-        }
-    });
-  }
-</script>
+
   <script>
-    on_submit("#addquarter", async()=>{
-        event.preventDefault();
-        $data = get_form_data("#addquarter");
-        $result = await mypost("quarters/add", $data);
-        $backend = $result?.backend;
-        if($backend.code == 200){
-            Swal.fire({
-                title: "Success",
-                text: $backend.message,
-                icon: "success"
-            }).then(()=>{
-                reload();
-            });
+    async function loadQuarters(){
+      $result = await mypost("Quarters/get", {
+        here: 1
+      });
+      const table = new DataTable(document.querySelector("#teachertable"));
+      $data = $result?.backend?.data;
+      $data.forEach(column => {
+        $action = column.status == 0 ? ` <button class='btn btn-success delb' stat = '1' num = '${column.id}'>ENABLE</button>` : `<button class='btn btn-danger delb' stat = '0'  num = '${column.id}'>DISABLE</button>`;
+        table.row.add([
+          column.id,
+          column.description,
+          column.date_added,
+          $action+" "+`<button class='btn btn-warning editbtn' num='${column.id}'>Edit</button>`
+        ]).draw();
+      });
+    }
+  </script>
+
+  <script>
+    function showEditModal() {
+      $allEdit = document.querySelectorAll(".editbtn");
+      $allEdit.forEach(element => {
+        element.onclick = async function() {
+          $id = element.getAttribute("num");
+          $api = await mypost("Quarters/getbyid", {
+            id: $id
+          });
+          $backend = $api.backend;
+          if ($backend.code == 200) {
+            $data = $backend.data[0];
+            set_input_value("#quarter1", $data.id);
+            set_input_value("#description1", $data.description);
+            $("#editModal").modal("show");
+            $("#editquarter").attr("num", $id);
+          }
         }
-        else{
-            Swal.fire({
-                title: "Error",
-                text: $backend.message,
-                icon: "error"
-            });
-        }
+      });
+    }
+  </script>
+  <script>
+    on_submit("#editquarter", async () => {
+      event.preventDefault();
+      $data = get_form_data("#editquarter");
+      $id = $("#editquarter").attr("num");
+      $result = await mypost("quarters/edit", {
+        id: $id,
+        quarter: get_value("#quarter1"),
+        description: get_value("#description1"),
+      });
+      $backend = $result?.backend;
+      if ($backend.code == 200) {
+        Swal.fire({
+          title: "Success",
+          text: $backend.message,
+          icon: "success"
+        }).then(() => {
+          reload();
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: $backend.message,
+          icon: "error"
+        });
+      }
+    });
+  </script>
+
+
+  <script>
+    on_load(async () => {
+      await loadQuarters();
+      await deleteQuarter();
+      await showEditModal();
     });
 
     
+
+    function deleteQuarter() {
+      $allDeleteQ = document.querySelectorAll(".delb");
+      $allDeleteQ.forEach(element => {
+        element.onclick = async function() {
+          $id = element.getAttribute("num");
+          $stat = element.getAttribute("stat");
+          $api = await mypost("Quarters/update", {
+            stat: $stat,
+            id: $id
+          });
+          $backend = $api.backend;
+          if ($backend.code == 200) {
+            Swal.fire({
+              title: "Success",
+              text: "Quarter updated",
+              icon: "success"
+            }).then(() => {
+              reload();
+            })
+          }
+        }
+      });
+    }
+  </script>
+  <script>
+    on_submit("#addquarter", async () => {
+      event.preventDefault();
+      $data = get_form_data("#addquarter");
+      $result = await mypost("quarters/add", $data);
+      $backend = $result?.backend;
+      if ($backend.code == 200) {
+        Swal.fire({
+          title: "Success",
+          text: $backend.message,
+          icon: "success"
+        }).then(() => {
+          reload();
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: $backend.message,
+          icon: "error"
+        });
+      }
+    });
   </script>
 
- 
+
 
 
 </body>

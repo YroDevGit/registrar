@@ -6,11 +6,11 @@ $update = array(
     "status" => $kr == 0 ? "1" : "0",
 );
 $where = array(
-    "subject" => $id
+    "id" => $id
 );
 
 
-$result = execute_update("assignment", $update, $where);
+$result = execute_update("subject", $update, $where);
 
 json_response($result);
 

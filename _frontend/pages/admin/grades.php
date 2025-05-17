@@ -166,14 +166,14 @@
 
                 <div class="row-y">
                     <label for="">Subjects</label>
-                    <select name="subject" id="subjects" class="form-control">
+                    <select name="subject" id="subjects" class="form-control" required>
                         <option value="">Select Subject</option>
                     </select>
                 </div>
 
                 <div class="row-y">
                     <label for="">Quarter</label>
-                    <select name="quarter" id="quarter" class="form-control">
+                    <select name="quarter" id="quarter" class="form-control" required>
                         <option value="">Select Quarter</option>
                     </select>
                 </div>
@@ -240,7 +240,7 @@
         $data = $backend.data ?? [];
         
         $data.forEach(column => {
-            $cm = column.course +' '+column.major + " " +column.year +"-"+column.section;
+            $cm = column.course +' '+column.major + " " +column.year +"-"+column.section+" ("+column.sem+")";
             add_html("#coursemajor" ,  `<option value='${column.id}'>${$cm}</option>`);
         });
     });
