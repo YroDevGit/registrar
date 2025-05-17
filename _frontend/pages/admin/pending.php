@@ -335,7 +335,9 @@
         if ($status == 0) {
           $btn = `<button class="btn btn-success" onclick="approveStudent('${column.id}', '${column.cmajor}')">Approve</button> <button class="btn btn-danger" onclick="ignoreStudent('${column.id}')">Decline</button>`;
         } else {
-          $btn = `<button class="btn btn-grey" onclick="">Approve</button> <button class="btn btn-danger">Disable</button>`;
+          $bbt = ``;
+          
+          $btn = `<button class="btn btn-grey" onclick="">Approve</button> `+$bbt;
         }
         dataTable.row.add([
           `<img src="${column.img}" alt="" height="30" width="30">`,
@@ -358,6 +360,25 @@ $(document).ready(async function() {
 });
 
     
+  </script>
+
+  <script>
+    function remm(id){
+      confirmMessage("Are you sure to proceed?", async()=>{
+        const result = await mypost('/Action/disableuser', {id:id});
+        if (result?.backend?.code == 200) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: result?.backend?.message,
+          }).then(() => {
+            reload();
+          });
+        } else {
+          alert("Error: " + result?.backend?.message);
+        }
+      })
+    }
   </script>
 
   <script>

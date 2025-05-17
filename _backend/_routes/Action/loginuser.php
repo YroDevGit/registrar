@@ -18,10 +18,10 @@
     
     
     if($result['code']==SUCCESS && ! empty($result['firstrow'] ?? [])){
-        if($result['firstrow']['status'] == 0){
+        if($result['firstrow']['status'] == 0||$result['firstrow']['status'] == 2){
             $result['code'] = 5;
-            $result['errors'] = "Your account is not activated yet.";
-            $result['message'] = "Your account is not activated yet.";
+            $result['errors'] = "Your account is disabled or not activated yet.";
+            $result['message'] = "Your account is disabled or not activated yet.";
             json_response($result);
         }
         $frow = $result['firstrow'];
