@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Students grade</title>
+    <link href="<?=assets()?>/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     * {
   box-sizing: border-box;
@@ -169,7 +170,13 @@ table th, table td {
 
  <?php include_page("student/lib") ?>
 </head>
+
+
+  <!-- change pass modal -->
+  
+
 <body>
+  
 
   <!-- Sidebar -->
   <?php include_page("student/sidebar") ?>
@@ -179,6 +186,7 @@ table th, table td {
 
     <!-- Topbar -->
     <?php include_page("student/topbar") ?>
+    <?php include_page("student/settings") ?>
 
     <!-- Content -->
     <div class="content">
@@ -210,6 +218,8 @@ table th, table td {
 
   </div>
 
+    <script src="<?=assets()?>/js/popper.min.js"></script>
+  <script src="<?=assets()?>/js/bootstrap.min.js"></script>
   <script src="<?=assets('teacher.js')?>"></script>
 
   <script>

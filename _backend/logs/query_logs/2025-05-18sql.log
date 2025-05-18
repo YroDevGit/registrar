@@ -165,3 +165,56 @@ success: (6PI8D) [2025-05-18 09:40:55] select * from theme where id = 1
 success: (I1QKT) [2025-05-18 09:40:55] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
 success: (HV3XE) [2025-05-18 09:40:55] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
 success: (8PSTD) [2025-05-18 09:40:56] update theme set theme = 'theme16' where id = 1
+success: (OUM7B) [2025-05-18 11:21:56] select * from quarter where status = 1 order by id desc
+success: (RM2WF) [2025-05-18 11:26:49] select * from quarter where status = 1 order by id desc
+success: (WYCIJ) [2025-05-18 11:27:27] select * from quarter where status = 1 order by id desc
+success: (MTB71) [2025-05-18 11:27:29] select * from quarter where status = 1 order by id desc
+success: (S69NA) [2025-05-18 11:27:54] select * from quarter where status = 1 order by id desc
+success: (69PKD) [2025-05-18 11:27:55] select * from quarter where status = 1 order by id desc
+success: (UKJI7) [2025-05-18 11:28:08] select * from quarter where status = 1 order by id desc
+success: (2FDYV) [2025-05-18 11:28:26] select * from quarter where status = 1 order by id desc
+success: (1DPCI) [2025-05-18 11:28:27] select * from quarter where status = 1 order by id desc
+success: (UWBFN) [2025-05-18 11:28:33] select * from quarter where status = 1 order by id desc
+success: (BO52N) [2025-05-18 11:30:00] select * from quarter where status = 1 order by id desc
+success: (I8G2F) [2025-05-18 11:31:16] select * from quarter where status = 1 order by id desc
+success: (6KMJC) [2025-05-18 11:31:17] select * from quarter where status = 1 order by id desc
+success: (3N657) [2025-05-18 11:32:14] select * from quarter where status = 1 order by id desc
+success: (O8LKE) [2025-05-18 11:32:17] select * from quarter where status = 1 order by id desc
+success: (9MQJ3) [2025-05-18 11:34:19] select * from quarter where status = 1 order by id desc
+success: (69XFM) [2025-05-18 11:34:48] select * from quarter where status = 1 order by id desc
+success: (7NZEK) [2025-05-18 11:34:51] select * from quarter where status = 1 order by id desc
+success: (ZNUBT) [2025-05-18 11:35:18] select * from quarter where status = 1 order by id desc
+success: (LX4PD) [2025-05-18 11:35:27] select * from quarter where status = 1 order by id desc
+success: (FB5XL) [2025-05-18 11:35:45] select * from quarter where status = 1 order by id desc
+success: (67DZJ) [2025-05-18 11:35:57] select * from quarter where status = 1 order by id desc
+success: (Y8TCM) [2025-05-18 11:36:12] SELECT * FROM users WHERE id = NULL
+success: (WKYCS) [2025-05-18 11:36:12] UPDATE users SET password = NULL WHERE id = NULL
+success: (6IOAN) [2025-05-18 11:36:31] SELECT * FROM users WHERE id = NULL
+success: (LYAS7) [2025-05-18 11:36:31] UPDATE users SET password = NULL WHERE id = NULL
+success: (LGF5E) [2025-05-18 11:37:07] select * from quarter where status = 1 order by id desc
+success: (3PBQ2) [2025-05-18 11:37:12] SELECT * FROM users WHERE id = NULL
+success: (B2CV5) [2025-05-18 11:37:12] UPDATE users SET password = NULL WHERE id = NULL
+success: (7D3TC) [2025-05-18 11:37:26] select * from quarter where status = 1 order by id desc
+success: (WBYKF) [2025-05-18 11:37:31] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (MZFQT) [2025-05-18 11:38:06] select * from quarter where status = 1 order by id desc
+success: (HS9VF) [2025-05-18 11:38:10] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (4J569) [2025-05-18 11:38:33] select * from quarter where status = 1 order by id desc
+success: (8NUAD) [2025-05-18 11:38:36] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (ZR8XL) [2025-05-18 11:38:49] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (QDCXI) [2025-05-18 11:44:20] select * from quarter where status = 1 order by id desc
+success: (UARDY) [2025-05-18 11:44:25] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (2NY3J) [2025-05-18 11:44:36] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (4EOPQ) [2025-05-18 11:45:23] select * from quarter where status = 1 order by id desc
+success: (SN3BK) [2025-05-18 11:45:59] select * from users where username = 'tyrone111@gmail.comm' and password = 'dasdas'
+success: (LWUQ2) [2025-05-18 11:46:10] select * from users where username = 'tyrone111@gmail.comm' and password = 'dasdas'
+success: (E43LD) [2025-05-18 11:46:16] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TML20250507085842', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-18 11:46:16')
+success: (IFC42) [2025-05-18 11:46:18] select * from quarter where status = 1 order by id desc
+success: (LOUNX) [2025-05-18 11:46:28] SELECT * FROM users WHERE id = 'TML20250507085842'
+success: (5HBZQ) [2025-05-18 11:46:34] SELECT * FROM users WHERE id = 'TML20250507085842'
+success: (XNV4E) [2025-05-18 11:46:38] SELECT * FROM users WHERE id = 'TML20250507085842'
+success: (VIJA1) [2025-05-18 11:46:42] SELECT * FROM users WHERE id = 'TML20250507085842'
+success: (UPDO8) [2025-05-18 11:46:43] UPDATE users SET password = 'das' WHERE id = 'TML20250507085842'
+success: (PSA7C) [2025-05-18 11:46:48] SELECT a.coursemajor, s.`subject`, a.teacher, s.id AS 'sid', a.id AS 'aid', s.description, g.id AS 'gid', g.grade, g.student, g.quarter FROM assignment a LEFT JOIN subject s ON a.subject = s.id LEFT JOIN grades g ON s.id = g.subject AND g.student = 'TML20250507085842' AND g.quarter = '2nd-sem' WHERE a.coursemajor = 1;
+success: (C1W9V) [2025-05-18 11:46:50] SELECT a.coursemajor, s.`subject`, a.teacher, s.id AS 'sid', a.id AS 'aid', s.description, g.id AS 'gid', g.grade, g.student, g.quarter FROM assignment a LEFT JOIN subject s ON a.subject = s.id LEFT JOIN grades g ON s.id = g.subject AND g.student = 'TML20250507085842' AND g.quarter = '1st-sem' WHERE a.coursemajor = 1;
