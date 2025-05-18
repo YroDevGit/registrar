@@ -95,7 +95,7 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Quarters</h5>
+                <h5 class="card-title">School courses</h5>
               </div>
               <div style="position:absolute;right:10px;vertical-align:center;top:50%;transform:translateY(-50%);">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">ADD NEW</button>
@@ -112,7 +112,7 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">List of quarters</h5>
+                <h5 class="card-title">List of courses</h5>
                 <div class="table-responsive">
                   <table class="table table-hover" id="coursetbl">
                     <thead>

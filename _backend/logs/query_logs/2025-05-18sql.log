@@ -1,0 +1,167 @@
+success: (I6RUT) [2025-05-18 09:04:54] select * from users where username = 'tyronem@gmail.com' and password = 'password'
+success: (W2UMJ) [2025-05-18 09:04:56] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-1143137101', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-18 09:04:56')
+success: (6BRSQ) [2025-05-18 09:05:36] select * from theme where id = 1
+success: (2AMEK) [2025-05-18 09:05:36] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (PTHK1) [2025-05-18 09:05:36] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (4PJHS) [2025-05-18 09:05:37] update theme set theme = 'theme16' where id = 1
+success: (YEQ5V) [2025-05-18 09:05:38] select * from quarter order by id desc
+success: (5WDEL) [2025-05-18 09:05:38] select * from theme where id = 1
+success: (OT1HS) [2025-05-18 09:05:39] update theme set theme = 'theme16' where id = 1
+success: (YM2XK) [2025-05-18 09:05:41] update quarter set status = 0 where id = '1-Final'
+success: (OXDT9) [2025-05-18 09:05:42] select * from quarter order by id desc
+success: (KAJVX) [2025-05-18 09:05:42] select * from theme where id = 1
+success: (TU91K) [2025-05-18 09:05:43] update theme set theme = 'theme16' where id = 1
+success: (713HJ) [2025-05-18 09:05:45] select * from coursemajor
+success: (AT2DE) [2025-05-18 09:05:45] select * from theme where id = 1
+success: (FZYG7) [2025-05-18 09:05:45] select * from quarter where status = 1 order by id desc
+success: (MHA16) [2025-05-18 09:05:46] update theme set theme = 'theme16' where id = 1
+success: (OBVKG) [2025-05-18 09:05:46] UPDATE coursemajor SET status = NULL WHERE id = 1
+success: (E952L) [2025-05-18 09:05:47] select * from coursemajor
+success: (CFD93) [2025-05-18 09:05:47] select * from theme where id = 1
+success: (L2AYV) [2025-05-18 09:05:47] select * from quarter where status = 1 order by id desc
+success: (4VOBK) [2025-05-18 09:05:48] update theme set theme = 'theme16' where id = 1
+success: (M2SQA) [2025-05-18 09:07:27] select * from coursemajor where id = '2'
+success: (DE6A2) [2025-05-18 09:07:31] UPDATE coursemajor SET course = 'BSIt', major = 'PROGRAMMING', year = 1, section = 2, sem = '1st-sem' WHERE id = 2
+success: (1DPTC) [2025-05-18 09:07:33] select * from coursemajor
+success: (GS3PI) [2025-05-18 09:07:33] select * from theme where id = 1
+success: (WABIT) [2025-05-18 09:07:33] select * from quarter where status = 1 order by id desc
+success: (1XST8) [2025-05-18 09:07:33] update theme set theme = 'theme16' where id = 1
+success: (46CXJ) [2025-05-18 09:08:31] UPDATE coursemajor SET status = NULL WHERE id = 4
+success: (PFNCM) [2025-05-18 09:08:33] select * from coursemajor
+success: (KMHT3) [2025-05-18 09:08:33] select * from theme where id = 1
+success: (BC63V) [2025-05-18 09:08:33] select * from quarter where status = 1 order by id desc
+success: (B9G1Y) [2025-05-18 09:08:34] update theme set theme = 'theme16' where id = 1
+success: (8P4VB) [2025-05-18 09:09:01] UPDATE coursemajor SET status = NULL WHERE id = 4
+success: (MLRXK) [2025-05-18 09:09:22] select * from coursemajor
+success: (RH81G) [2025-05-18 09:09:22] select * from theme where id = 1
+success: (UQD46) [2025-05-18 09:09:23] select * from quarter where status = 1 order by id desc
+success: (5I6T7) [2025-05-18 09:09:23] update theme set theme = 'theme16' where id = 1
+success: (DYGN4) [2025-05-18 09:09:25] UPDATE coursemajor SET status = 0 WHERE id = 2
+success: (HNGJB) [2025-05-18 09:09:26] select * from coursemajor
+success: (X65OB) [2025-05-18 09:09:26] select * from theme where id = 1
+success: (X4Y3V) [2025-05-18 09:09:26] select * from quarter where status = 1 order by id desc
+success: (ZBYM6) [2025-05-18 09:09:27] update theme set theme = 'theme16' where id = 1
+success: (D6STG) [2025-05-18 09:09:38] select * from coursemajor
+success: (94FMU) [2025-05-18 09:09:38] select * from theme where id = 1
+success: (GI8U7) [2025-05-18 09:09:38] select * from quarter where status = 1 order by id desc
+success: (CW1YO) [2025-05-18 09:09:38] update theme set theme = 'theme16' where id = 1
+success: (A18CG) [2025-05-18 09:09:46] UPDATE coursemajor SET status = 0 WHERE id = 2
+success: (YG3TO) [2025-05-18 09:09:47] select * from coursemajor
+success: (Z4N2X) [2025-05-18 09:09:47] select * from theme where id = 1
+success: (23BQ5) [2025-05-18 09:09:47] select * from quarter where status = 1 order by id desc
+success: (RQXD4) [2025-05-18 09:09:48] update theme set theme = 'theme16' where id = 1
+success: (KY7VB) [2025-05-18 09:09:50] UPDATE coursemajor SET status = 0 WHERE id = 3
+success: (YQMZO) [2025-05-18 09:09:51] select * from coursemajor
+success: (P43EZ) [2025-05-18 09:09:51] select * from theme where id = 1
+success: (WTRQG) [2025-05-18 09:09:51] select * from quarter where status = 1 order by id desc
+success: (T3VAO) [2025-05-18 09:09:52] update theme set theme = 'theme16' where id = 1
+success: (FNIY5) [2025-05-18 09:13:46] select * from coursemajor
+success: (NA29D) [2025-05-18 09:13:46] select * from theme where id = 1
+success: (8GD5Q) [2025-05-18 09:13:46] select * from quarter where status = 1 order by id desc
+success: (4XIC9) [2025-05-18 09:13:46] update theme set theme = 'theme16' where id = 1
+success: (WDJ69) [2025-05-18 09:15:02] select * from coursemajor
+success: (M9FVS) [2025-05-18 09:15:02] select * from theme where id = 1
+success: (PV7JK) [2025-05-18 09:15:02] select * from quarter where status = 1 order by id desc
+success: (I59S6) [2025-05-18 09:15:03] update theme set theme = 'theme16' where id = 1
+success: (RPZG7) [2025-05-18 09:15:47] select * from coursemajor
+success: (OESMB) [2025-05-18 09:15:47] select * from theme where id = 1
+success: (EWHXG) [2025-05-18 09:15:47] select * from quarter where status = 1 order by id desc
+success: (KP53M) [2025-05-18 09:15:48] update theme set theme = 'theme16' where id = 1
+success: (PLVR9) [2025-05-18 09:16:04] select * from coursemajor
+success: (PEUOV) [2025-05-18 09:16:04] select * from theme where id = 1
+success: (GAEB9) [2025-05-18 09:16:04] select * from quarter where status = 1 order by id desc
+success: (BU5LD) [2025-05-18 09:16:05] update theme set theme = 'theme16' where id = 1
+success: (B7IED) [2025-05-18 09:18:55] select * from coursemajor
+success: (74IUM) [2025-05-18 09:18:55] select * from theme where id = 1
+success: (1J8K3) [2025-05-18 09:18:55] select * from quarter where status = 1 order by id desc
+success: (EHFP9) [2025-05-18 09:18:56] update theme set theme = 'theme16' where id = 1
+success: (LSVX3) [2025-05-18 09:27:08] select * from coursemajor
+success: (QZ7PW) [2025-05-18 09:27:08] select * from theme where id = 1
+success: (CADPW) [2025-05-18 09:27:08] select * from quarter where status = 1 order by id desc
+success: (6RVC5) [2025-05-18 09:27:09] update theme set theme = 'theme16' where id = 1
+success: (4NJIL) [2025-05-18 09:27:28] select * from coursemajor
+success: (7XMKL) [2025-05-18 09:27:28] select * from theme where id = 1
+success: (S9MKV) [2025-05-18 09:27:28] select * from quarter where status = 1 order by id desc
+success: (8VS7X) [2025-05-18 09:27:28] update theme set theme = 'theme16' where id = 1
+success: (ARJX6) [2025-05-18 09:27:40] SELECT * FROM users WHERE id = NULL
+success: (ZW26Y) [2025-05-18 09:27:46] SELECT * FROM users WHERE id = NULL
+success: (J75GL) [2025-05-18 09:28:59] select * from coursemajor
+success: (GHW5T) [2025-05-18 09:28:59] select * from theme where id = 1
+success: (OY7AJ) [2025-05-18 09:28:59] select * from quarter where status = 1 order by id desc
+success: (BOJ71) [2025-05-18 09:28:59] update theme set theme = 'theme16' where id = 1
+success: (J48GD) [2025-05-18 09:29:07] SELECT * FROM users WHERE id = NULL
+success: (R7Z68) [2025-05-18 09:29:09] SELECT * FROM users WHERE id = NULL
+success: (NCKM2) [2025-05-18 09:30:35] SELECT * FROM users WHERE id = NULL
+success: (WSO7M) [2025-05-18 09:31:06] SELECT * FROM users WHERE id = NULL
+success: (816NF) [2025-05-18 09:32:18] select * from coursemajor
+success: (OC836) [2025-05-18 09:32:18] select * from theme where id = 1
+success: (IM2TW) [2025-05-18 09:32:19] select * from quarter where status = 1 order by id desc
+success: (7JBGN) [2025-05-18 09:32:19] update theme set theme = 'theme16' where id = 1
+success: (HO2LD) [2025-05-18 09:32:29] SELECT * FROM users WHERE id = NULL
+success: (8RLNQ) [2025-05-18 09:33:12] select * from coursemajor
+success: (AYJTC) [2025-05-18 09:33:12] select * from theme where id = 1
+success: (2SOND) [2025-05-18 09:33:13] select * from quarter where status = 1 order by id desc
+success: (4P8HV) [2025-05-18 09:33:13] update theme set theme = 'theme16' where id = 1
+success: (BZR6A) [2025-05-18 09:33:22] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (8HL9W) [2025-05-18 09:33:46] select * from coursemajor
+success: (9UYJP) [2025-05-18 09:33:46] select * from theme where id = 1
+success: (JDWPT) [2025-05-18 09:33:47] select * from quarter where status = 1 order by id desc
+success: (KJQ54) [2025-05-18 09:33:47] update theme set theme = 'theme16' where id = 1
+success: (LKXZE) [2025-05-18 09:33:56] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (4DWX8) [2025-05-18 09:34:26] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (2MUZR) [2025-05-18 09:34:44] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (CXIYR) [2025-05-18 09:35:17] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (FEGRL) [2025-05-18 09:35:54] select * from coursemajor
+success: (NLQ6X) [2025-05-18 09:35:54] select * from theme where id = 1
+success: (D7H5L) [2025-05-18 09:35:54] select * from quarter where status = 1 order by id desc
+success: (LCV5K) [2025-05-18 09:35:54] update theme set theme = 'theme16' where id = 1
+success: (3UNYA) [2025-05-18 09:36:05] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (JONIC) [2025-05-18 09:36:20] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (7GQP9) [2025-05-18 09:36:44] select * from coursemajor
+success: (1EUC8) [2025-05-18 09:36:44] select * from theme where id = 1
+success: (KN7XA) [2025-05-18 09:36:44] select * from quarter where status = 1 order by id desc
+success: (D4L1P) [2025-05-18 09:36:45] update theme set theme = 'theme16' where id = 1
+success: (7NUQE) [2025-05-18 09:36:50] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (76P3U) [2025-05-18 09:37:25] select * from coursemajor
+success: (X3LHP) [2025-05-18 09:37:25] select * from theme where id = 1
+success: (YCAWK) [2025-05-18 09:37:25] select * from quarter where status = 1 order by id desc
+success: (AKJBG) [2025-05-18 09:37:25] update theme set theme = 'theme16' where id = 1
+success: (6WAJ3) [2025-05-18 09:37:31] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (C5HNT) [2025-05-18 09:37:49] select * from coursemajor
+success: (6TA2M) [2025-05-18 09:37:49] select * from theme where id = 1
+success: (74DF1) [2025-05-18 09:37:49] select * from quarter where status = 1 order by id desc
+success: (N5RAS) [2025-05-18 09:37:50] update theme set theme = 'theme16' where id = 1
+success: (UYERM) [2025-05-18 09:37:54] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (VNXHG) [2025-05-18 09:38:05] select * from coursemajor
+success: (4RIHT) [2025-05-18 09:38:05] select * from theme where id = 1
+success: (8IL9Q) [2025-05-18 09:38:05] select * from quarter where status = 1 order by id desc
+success: (VNHF4) [2025-05-18 09:38:06] update theme set theme = 'theme16' where id = 1
+success: (MUVKQ) [2025-05-18 09:38:12] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (RU8LV) [2025-05-18 09:38:17] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (8NAHD) [2025-05-18 09:38:23] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (FJ2V8) [2025-05-18 09:38:23] UPDATE users SET password = 'pass' WHERE id = 'TLM-1143137101'
+success: (D9FUW) [2025-05-18 09:38:45] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (YNXRQ) [2025-05-18 09:38:57] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (E74HG) [2025-05-18 09:38:57] UPDATE users SET password = 'password' WHERE id = 'TLM-1143137101'
+success: (SNLAE) [2025-05-18 09:39:09] select * from coursemajor
+success: (GOURC) [2025-05-18 09:39:09] select * from theme where id = 1
+success: (JQOID) [2025-05-18 09:39:09] select * from quarter where status = 1 order by id desc
+success: (TSJCV) [2025-05-18 09:39:09] update theme set theme = 'theme16' where id = 1
+success: (4T8JI) [2025-05-18 09:39:39] select * from coursemajor
+success: (GKO7L) [2025-05-18 09:39:39] select * from theme where id = 1
+success: (F125I) [2025-05-18 09:39:40] select * from quarter where status = 1 order by id desc
+success: (AZ94N) [2025-05-18 09:39:40] update theme set theme = 'theme16' where id = 1
+success: (GKFXC) [2025-05-18 09:40:05] select * from coursemajor
+success: (MLWKQ) [2025-05-18 09:40:05] select * from theme where id = 1
+success: (LQ8BN) [2025-05-18 09:40:05] select * from quarter where status = 1 order by id desc
+success: (OLB4P) [2025-05-18 09:40:06] update theme set theme = 'theme16' where id = 1
+success: (GWXAN) [2025-05-18 09:40:33] select * from coursemajor
+success: (R7BQO) [2025-05-18 09:40:33] select * from theme where id = 1
+success: (UVNC9) [2025-05-18 09:40:33] select * from quarter where status = 1 order by id desc
+success: (TQDOE) [2025-05-18 09:40:34] update theme set theme = 'theme16' where id = 1
+success: (6PI8D) [2025-05-18 09:40:55] select * from theme where id = 1
+success: (I1QKT) [2025-05-18 09:40:55] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (HV3XE) [2025-05-18 09:40:55] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (8PSTD) [2025-05-18 09:40:56] update theme set theme = 'theme16' where id = 1

@@ -1,7 +1,7 @@
 <?php 
     //Add codes here...
     $id = post("id");
-    $status = post("status");
+    $status = post("stat");
 
     $set = array(
         "status" => $status
