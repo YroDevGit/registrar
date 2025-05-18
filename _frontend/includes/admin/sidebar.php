@@ -7,7 +7,7 @@
     </div>
     <ul class="sidebar-menu do-nicescrol">
         <li class="sidebar-header">MAIN NAVIGATION</li>
-        <li class="tnone">
+        <li>
             <a href="<?=page('admin/dashboard')?>">
                 <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
             </a>

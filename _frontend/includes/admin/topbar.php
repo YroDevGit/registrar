@@ -11,7 +11,7 @@
 
     <ul class="navbar-nav align-items-center right-nav-link">
       
-      <li class="nav-item language">
+      <li class="nav-item language" style="display: none;">
         <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
         <ul class="dropdown-menu dropdown-menu-right">
           <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>
@@ -36,10 +36,7 @@
               </div>
             </a>
           </li>
-          <li class="dropdown-divider"></li>
-          <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
-          <li class="dropdown-divider"></li>
-          <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
+
           <li class="dropdown-divider"></li>
           <li class="dropdown-item" id="opensettings"><i class="icon-settings mr-2"></i> Setting</li>
           <li class="dropdown-divider"></li>
@@ -54,7 +51,7 @@
 
 
 <!-- change password modal -->
-<div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" style="color:black;" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">

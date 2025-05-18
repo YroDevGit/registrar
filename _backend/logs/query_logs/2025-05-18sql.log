@@ -218,3 +218,291 @@ success: (VIJA1) [2025-05-18 11:46:42] SELECT * FROM users WHERE id = 'TML202505
 success: (UPDO8) [2025-05-18 11:46:43] UPDATE users SET password = 'das' WHERE id = 'TML20250507085842'
 success: (PSA7C) [2025-05-18 11:46:48] SELECT a.coursemajor, s.`subject`, a.teacher, s.id AS 'sid', a.id AS 'aid', s.description, g.id AS 'gid', g.grade, g.student, g.quarter FROM assignment a LEFT JOIN subject s ON a.subject = s.id LEFT JOIN grades g ON s.id = g.subject AND g.student = 'TML20250507085842' AND g.quarter = '2nd-sem' WHERE a.coursemajor = 1;
 success: (C1W9V) [2025-05-18 11:46:50] SELECT a.coursemajor, s.`subject`, a.teacher, s.id AS 'sid', a.id AS 'aid', s.description, g.id AS 'gid', g.grade, g.student, g.quarter FROM assignment a LEFT JOIN subject s ON a.subject = s.id LEFT JOIN grades g ON s.id = g.subject AND g.student = 'TML20250507085842' AND g.quarter = '1st-sem' WHERE a.coursemajor = 1;
+success: (23RXU) [2025-05-18 11:59:59] select * from users where username = 'tyronem@gmail.com' and password = 'password'
+success: (T83WB) [2025-05-18 12:00:05] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-1143137101', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-18 12:00:05')
+success: (6V9JP) [2025-05-18 12:00:06] select * from theme where id = 1
+success: (7T49C) [2025-05-18 12:00:06] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (CZ9T4) [2025-05-18 12:00:06] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (ZY1NA) [2025-05-18 12:00:07] update theme set theme = 'theme16' where id = 1
+success: (P42GX) [2025-05-18 12:00:41] select * from theme where id = 1
+success: (P4J8U) [2025-05-18 12:00:41] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (WPQY5) [2025-05-18 12:00:41] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (4N5ML) [2025-05-18 12:00:41] update theme set theme = 'theme16' where id = 1
+success: (9W8PK) [2025-05-18 12:04:51] select * from users where username = 'tyronem@gmail.com' and password = 'password'
+success: (CBUV9) [2025-05-18 12:05:03] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TLM-1143137101', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-18 12:05:03')
+success: (3W82L) [2025-05-18 12:05:05] select * from theme where id = 1
+success: (Y6KBF) [2025-05-18 12:05:05] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (X7G3Q) [2025-05-18 12:05:05] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (FQBT8) [2025-05-18 12:05:05] update theme set theme = 'theme16' where id = 1
+success: (HINTP) [2025-05-18 12:07:04] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (B6XTZ) [2025-05-18 12:07:04] select * from theme where id = 1
+success: (3T9DR) [2025-05-18 12:07:05] update theme set theme = 'theme16' where id = 1
+success: (Z2S43) [2025-05-18 12:07:56] select * from theme where id = 1
+success: (KO85L) [2025-05-18 12:07:56] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (QBMFT) [2025-05-18 12:07:56] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (I3HYA) [2025-05-18 12:07:56] update theme set theme = 'theme16' where id = 1
+success: (UL2S3) [2025-05-18 12:08:10] select * from theme where id = 1
+success: (YHQRC) [2025-05-18 12:08:10] update theme set theme = 'theme16' where id = 1
+success: (9ZV5O) [2025-05-18 12:08:36] select * from theme where id = 1
+success: (2IKWG) [2025-05-18 12:08:36] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (MW6L3) [2025-05-18 12:08:36] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (9357O) [2025-05-18 12:08:36] update theme set theme = 'theme16' where id = 1
+success: (JOZNK) [2025-05-18 12:08:44] select * from theme where id = 1
+success: (YIU9K) [2025-05-18 12:08:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (2YFWB) [2025-05-18 12:08:44] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (MDCH7) [2025-05-18 12:08:45] update theme set theme = 'theme16' where id = 1
+success: (OUBCE) [2025-05-18 12:08:56] select * from theme where id = 1
+success: (IXL16) [2025-05-18 12:08:57] update theme set theme = 'theme16' where id = 1
+success: (FJXTP) [2025-05-18 12:09:08] select * from theme where id = 1
+success: (JDZ4R) [2025-05-18 12:09:09] update theme set theme = 'theme16' where id = 1
+success: (ZCUSG) [2025-05-18 12:09:16] select * from theme where id = 1
+success: (LS2VT) [2025-05-18 12:09:17] update theme set theme = 'theme16' where id = 1
+success: (BAFQC) [2025-05-18 12:11:17] select * from theme where id = 1
+success: (G7BAW) [2025-05-18 12:11:18] update theme set theme = 'theme16' where id = 1
+success: (Y7NCO) [2025-05-18 12:13:02] select * from theme where id = 1
+success: (J2F7N) [2025-05-18 12:13:03] update theme set theme = 'theme16' where id = 1
+success: (5UFM8) [2025-05-18 12:13:14] select * from theme where id = 1
+success: (T8ZW9) [2025-05-18 12:13:15] update theme set theme = 'theme16' where id = 1
+success: (47XU3) [2025-05-18 12:13:51] select * from theme where id = 1
+success: (49ZF1) [2025-05-18 12:13:51] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (E45Z6) [2025-05-18 12:13:52] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (BLK4A) [2025-05-18 12:13:52] update theme set theme = 'theme16' where id = 1
+success: (B2FUJ) [2025-05-18 12:13:58] select * from theme where id = 1
+success: (VG42H) [2025-05-18 12:13:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (WZF4V) [2025-05-18 12:13:58] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (O4VIB) [2025-05-18 12:13:58] update theme set theme = 'theme16' where id = 1
+success: (Q7OHT) [2025-05-18 12:14:07] select * from theme where id = 1
+success: (MOYTN) [2025-05-18 12:14:08] update theme set theme = 'theme16' where id = 1
+success: (WKUES) [2025-05-18 12:14:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (T3ADJ) [2025-05-18 12:14:17] select * from theme where id = 1
+success: (4N6OT) [2025-05-18 12:14:17] update theme set theme = 'theme16' where id = 1
+success: (4CD9O) [2025-05-18 12:14:45] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7HCML) [2025-05-18 12:14:45] select * from theme where id = 1
+success: (EAH3V) [2025-05-18 12:14:46] update theme set theme = 'theme16' where id = 1
+success: (2JR4P) [2025-05-18 12:15:32] select * from theme where id = 1
+success: (51E7I) [2025-05-18 12:15:33] update theme set theme = 'theme16' where id = 1
+success: (E9WCF) [2025-05-18 12:15:41] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.status = 1 and u.type = 'student' ORDER BY u.createdate desc 
+success: (HJ1TQ) [2025-05-18 12:15:50] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.status = 2 and u.type = 'student' ORDER BY u.createdate desc 
+success: (TWZGH) [2025-05-18 12:15:57] select * from theme where id = 1
+success: (2YQRU) [2025-05-18 12:15:57] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (FXBDK) [2025-05-18 12:15:58] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (1RKH8) [2025-05-18 12:15:58] update theme set theme = 'theme16' where id = 1
+success: (JHZK3) [2025-05-18 12:16:11] select * from theme where id = 1
+success: (HVN2X) [2025-05-18 12:16:12] update theme set theme = 'theme16' where id = 1
+success: (8IG3S) [2025-05-18 12:16:17] select * from theme where id = 1
+success: (B3PXK) [2025-05-18 12:16:18] update theme set theme = 'theme16' where id = 1
+success: (XARND) [2025-05-18 12:16:50] select * from theme where id = 1
+success: (VNJCQ) [2025-05-18 12:16:50] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (S3DY2) [2025-05-18 12:16:50] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (NWA1G) [2025-05-18 12:16:51] update theme set theme = 'theme16' where id = 1
+success: (54GBI) [2025-05-18 12:17:05] select * from theme where id = 1
+success: (6YINU) [2025-05-18 12:17:06] update theme set theme = 'theme16' where id = 1
+success: (VROJZ) [2025-05-18 12:17:21] select * from theme where id = 1
+success: (I7VDO) [2025-05-18 12:17:21] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (932C7) [2025-05-18 12:17:21] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (74ZSH) [2025-05-18 12:17:22] update theme set theme = 'theme16' where id = 1
+success: (8HA4X) [2025-05-18 12:17:43] select * from theme where id = 1
+success: (QLJP9) [2025-05-18 12:17:43] update theme set theme = 'theme16' where id = 1
+success: (UA5Z3) [2025-05-18 12:17:57] select * from theme where id = 1
+success: (DKPER) [2025-05-18 12:17:57] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (E1LSG) [2025-05-18 12:17:58] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (2EIPT) [2025-05-18 12:17:58] update theme set theme = 'theme16' where id = 1
+success: (L14E3) [2025-05-18 12:18:10] select * from theme where id = 1
+success: (2OJ7R) [2025-05-18 12:18:10] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (I8SBY) [2025-05-18 12:18:10] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (7JEHG) [2025-05-18 12:18:10] update theme set theme = 'theme16' where id = 1
+success: (86ZT3) [2025-05-18 12:18:44] select * from theme where id = 1
+success: (5AMV1) [2025-05-18 12:18:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (4ZNMS) [2025-05-18 12:18:44] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (V6MPN) [2025-05-18 12:18:45] update theme set theme = 'theme16' where id = 1
+success: (G5ZV3) [2025-05-18 12:19:00] select * from theme where id = 1
+success: (VP5JN) [2025-05-18 12:19:00] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (SFJ48) [2025-05-18 12:19:00] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (WU3YJ) [2025-05-18 12:19:00] update theme set theme = 'theme16' where id = 1
+success: (PWQ62) [2025-05-18 12:19:08] select * from theme where id = 1
+success: (X3T7V) [2025-05-18 12:19:08] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JW1GR) [2025-05-18 12:19:08] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (QPNKZ) [2025-05-18 12:19:09] update theme set theme = 'theme16' where id = 1
+success: (NSQVG) [2025-05-18 12:19:29] select * from theme where id = 1
+success: (X1PL3) [2025-05-18 12:19:29] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (M29JK) [2025-05-18 12:19:29] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (IZ42R) [2025-05-18 12:19:30] update theme set theme = 'theme16' where id = 1
+success: (K3NUD) [2025-05-18 12:19:48] select * from theme where id = 1
+success: (G164B) [2025-05-18 12:19:48] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (7UI25) [2025-05-18 12:19:48] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (XDAPQ) [2025-05-18 12:19:49] update theme set theme = 'theme16' where id = 1
+success: (9HN3G) [2025-05-18 12:21:00] select * from theme where id = 1
+success: (BD7SN) [2025-05-18 12:21:00] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (XUHBG) [2025-05-18 12:21:00] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (3SFCV) [2025-05-18 12:21:01] update theme set theme = 'theme16' where id = 1
+success: (HST3C) [2025-05-18 12:21:34] select * from theme where id = 1
+success: (83XQZ) [2025-05-18 12:21:35] update theme set theme = 'theme16' where id = 1
+success: (Q4K81) [2025-05-18 12:22:20] select * from theme where id = 1
+success: (2MGEH) [2025-05-18 12:22:21] update theme set theme = 'theme16' where id = 1
+success: (KUF5J) [2025-05-18 12:22:27] SELECT * FROM users WHERE id = 'TLM-1143137101'
+success: (6G832) [2025-05-18 12:22:30] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (RZOQ4) [2025-05-18 12:22:30] select * from theme where id = 1
+success: (5EZPC) [2025-05-18 12:22:32] update theme set theme = 'theme16' where id = 1
+success: (F3IGH) [2025-05-18 12:22:54] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (BIPSZ) [2025-05-18 12:22:54] select * from theme where id = 1
+success: (Z3IWJ) [2025-05-18 12:22:54] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (EQBZJ) [2025-05-18 12:22:55] SELECT * FROM login_logs ORDER BY date_log desc
+success: (QCODL) [2025-05-18 12:22:55] update theme set theme = 'theme16' where id = 1
+success: (CRF38) [2025-05-18 14:12:06] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (DSHTW) [2025-05-18 14:12:06] select * from theme where id = 1
+success: (HMVZD) [2025-05-18 14:12:06] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (CDT3N) [2025-05-18 14:12:06] SELECT * FROM login_logs ORDER BY date_log desc
+success: (GB483) [2025-05-18 14:12:07] update theme set theme = 'theme16' where id = 1
+success: (UFDQZ) [2025-05-18 14:12:39] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (WDARG) [2025-05-18 14:12:39] select * from theme where id = 1
+success: (VLSCH) [2025-05-18 14:12:39] SELECT * FROM login_logs ORDER BY date_log desc
+success: (V8QMX) [2025-05-18 14:12:39] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (VO684) [2025-05-18 14:12:39] update theme set theme = 'theme16' where id = 1
+success: (OSPYJ) [2025-05-18 14:12:55] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (XAPTN) [2025-05-18 14:12:55] select * from theme where id = 1
+success: (VREID) [2025-05-18 14:12:55] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (4RJNE) [2025-05-18 14:12:55] SELECT * FROM login_logs ORDER BY date_log desc
+success: (TR87F) [2025-05-18 14:12:55] update theme set theme = 'theme16' where id = 1
+success: (YKGTL) [2025-05-18 14:13:08] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (45CNY) [2025-05-18 14:13:08] select * from theme where id = 1
+success: (G8PY4) [2025-05-18 14:13:08] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (73VIR) [2025-05-18 14:13:08] SELECT * FROM login_logs ORDER BY date_log desc
+success: (5RMEW) [2025-05-18 14:13:09] update theme set theme = 'theme16' where id = 1
+success: (N1RP9) [2025-05-18 14:13:19] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (SJA5X) [2025-05-18 14:13:19] select * from theme where id = 1
+success: (GMLXU) [2025-05-18 14:13:19] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (TKCOF) [2025-05-18 14:13:19] SELECT * FROM login_logs ORDER BY date_log desc
+success: (SNHME) [2025-05-18 14:13:20] update theme set theme = 'theme16' where id = 1
+success: (OC7WY) [2025-05-18 14:14:06] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (ADY6Z) [2025-05-18 14:14:06] select * from theme where id = 1
+success: (Y721R) [2025-05-18 14:14:06] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (4HK5S) [2025-05-18 14:14:06] SELECT * FROM login_logs ORDER BY date_log desc
+success: (CVAB8) [2025-05-18 14:14:07] update theme set theme = 'theme16' where id = 1
+success: (LE3SM) [2025-05-18 14:14:28] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (ECZ8R) [2025-05-18 14:14:28] select * from theme where id = 1
+success: (PGAYN) [2025-05-18 14:14:28] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (7QS3O) [2025-05-18 14:14:28] SELECT * FROM login_logs ORDER BY date_log desc
+success: (W14XK) [2025-05-18 14:14:28] update theme set theme = 'theme16' where id = 1
+success: (QV97T) [2025-05-18 14:14:36] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (8YQET) [2025-05-18 14:14:36] select * from theme where id = 1
+success: (LSI2J) [2025-05-18 14:14:36] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (NMRDU) [2025-05-18 14:14:37] SELECT * FROM login_logs ORDER BY date_log desc
+success: (IHKYA) [2025-05-18 14:14:37] update theme set theme = 'theme16' where id = 1
+success: (XWYS7) [2025-05-18 14:14:55] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (AELS3) [2025-05-18 14:14:55] select * from theme where id = 1
+success: (P3FZV) [2025-05-18 14:14:55] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (NSBMW) [2025-05-18 14:14:55] SELECT * FROM login_logs ORDER BY date_log desc
+success: (IXG72) [2025-05-18 14:14:55] update theme set theme = 'theme16' where id = 1
+success: (4MGKN) [2025-05-18 14:15:06] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (1GX3Y) [2025-05-18 14:15:06] select * from theme where id = 1
+success: (SEY2L) [2025-05-18 14:15:06] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (WG3F6) [2025-05-18 14:15:06] SELECT * FROM login_logs ORDER BY date_log desc
+success: (A72GS) [2025-05-18 14:15:06] update theme set theme = 'theme16' where id = 1
+success: (B9IRP) [2025-05-18 14:15:24] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (4D3SV) [2025-05-18 14:15:24] select * from theme where id = 1
+success: (B68PL) [2025-05-18 14:15:24] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (P463R) [2025-05-18 14:15:24] SELECT * FROM login_logs ORDER BY date_log desc
+success: (RQFC8) [2025-05-18 14:15:25] update theme set theme = 'theme16' where id = 1
+success: (AZ1FJ) [2025-05-18 14:20:43] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (ZRMKH) [2025-05-18 14:20:43] select * from theme where id = 1
+success: (3NA1Q) [2025-05-18 14:20:43] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (UBXH4) [2025-05-18 14:20:43] SELECT * FROM login_logs ORDER BY date_log desc
+success: (NVKSB) [2025-05-18 14:20:43] update theme set theme = 'theme16' where id = 1
+success: (7LCTD) [2025-05-18 14:21:03] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (7FOGQ) [2025-05-18 14:21:03] select * from theme where id = 1
+success: (ZM1U8) [2025-05-18 14:21:03] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (3T5XN) [2025-05-18 14:21:03] SELECT * FROM login_logs ORDER BY date_log desc
+success: (EG8RT) [2025-05-18 14:21:04] update theme set theme = 'theme16' where id = 1
+success: (IHQJ2) [2025-05-18 14:21:34] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (T93IK) [2025-05-18 14:21:34] select * from theme where id = 1
+success: (UR2GL) [2025-05-18 14:21:34] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (83GTR) [2025-05-18 14:21:34] SELECT * FROM login_logs ORDER BY date_log desc
+success: (I52Q8) [2025-05-18 14:21:35] update theme set theme = 'theme16' where id = 1
+success: (NRCEU) [2025-05-18 14:22:15] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (K9NTB) [2025-05-18 14:22:15] select * from theme where id = 1
+success: (KUOLC) [2025-05-18 14:22:15] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (JZU28) [2025-05-18 14:22:15] SELECT * FROM login_logs ORDER BY date_log desc
+success: (CR6GM) [2025-05-18 14:22:16] update theme set theme = 'theme16' where id = 1
+success: (1LS3M) [2025-05-18 14:22:30] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (FJ69A) [2025-05-18 14:22:30] select * from theme where id = 1
+success: (LXZ9M) [2025-05-18 14:22:30] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (L726J) [2025-05-18 14:22:30] SELECT * FROM login_logs ORDER BY date_log desc
+success: (I6XQ3) [2025-05-18 14:22:31] update theme set theme = 'theme16' where id = 1
+success: (AQPFR) [2025-05-18 14:22:41] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (XPDYI) [2025-05-18 14:22:41] select * from theme where id = 1
+success: (5G2KO) [2025-05-18 14:22:41] SELECT * FROM login_logs ORDER BY date_log desc
+success: (UN74L) [2025-05-18 14:22:41] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (B5KZT) [2025-05-18 14:22:41] update theme set theme = 'theme16' where id = 1
+success: (H8VGY) [2025-05-18 14:23:04] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (O6T13) [2025-05-18 14:23:04] select * from theme where id = 1
+success: (2FVI7) [2025-05-18 14:23:04] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (FJZIQ) [2025-05-18 14:23:04] SELECT * FROM login_logs ORDER BY date_log desc
+success: (1FHY4) [2025-05-18 14:23:05] update theme set theme = 'theme16' where id = 1
+success: (C7XGO) [2025-05-18 14:25:18] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (YMBCW) [2025-05-18 14:25:18] select * from theme where id = 1
+success: (WPM2V) [2025-05-18 14:25:18] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (OPJLS) [2025-05-18 14:25:18] SELECT * FROM login_logs ORDER BY date_log desc
+success: (6TOP2) [2025-05-18 14:25:18] update theme set theme = 'theme16' where id = 1
+success: (X1AWJ) [2025-05-18 14:25:32] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (JBQA3) [2025-05-18 14:25:32] select * from theme where id = 1
+success: (XRFSO) [2025-05-18 14:25:32] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (FBTE2) [2025-05-18 14:25:32] SELECT * FROM login_logs ORDER BY date_log desc
+success: (64JM2) [2025-05-18 14:25:32] update theme set theme = 'theme16' where id = 1
+success: (JFZEC) [2025-05-18 14:25:43] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (YWIXR) [2025-05-18 14:25:43] select * from theme where id = 1
+success: (I2RUE) [2025-05-18 14:25:43] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (J6Z39) [2025-05-18 14:25:43] SELECT * FROM login_logs ORDER BY date_log desc
+success: (1BWS6) [2025-05-18 14:25:43] update theme set theme = 'theme16' where id = 1
+success: (IACKO) [2025-05-18 14:29:43] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (RS58I) [2025-05-18 14:29:43] select * from theme where id = 1
+success: (IYJD8) [2025-05-18 14:29:43] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (4WNGB) [2025-05-18 14:29:43] SELECT * FROM login_logs ORDER BY date_log desc
+success: (KL61B) [2025-05-18 14:29:44] update theme set theme = 'theme16' where id = 1
+success: (CRQJS) [2025-05-18 14:30:00] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (DHR7W) [2025-05-18 14:30:00] select * from theme where id = 1
+success: (H1M5L) [2025-05-18 14:30:00] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (YFHVO) [2025-05-18 14:30:00] SELECT * FROM login_logs ORDER BY date_log desc
+success: (FZG9H) [2025-05-18 14:30:01] select count(*) as 'total' from teachers where status = 1
+success: (TBC3O) [2025-05-18 14:30:01] update theme set theme = 'theme16' where id = 1
+success: (24L6W) [2025-05-18 14:30:15] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (9YMXN) [2025-05-18 14:30:15] select * from theme where id = 1
+success: (XURQG) [2025-05-18 14:30:15] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (1YXO2) [2025-05-18 14:30:15] SELECT * FROM login_logs ORDER BY date_log desc
+success: (SHE1O) [2025-05-18 14:30:15] select count(*) as 'total' from teachers where status = 1
+success: (XSY3F) [2025-05-18 14:30:15] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (5OQP9) [2025-05-18 14:30:15] update theme set theme = 'theme16' where id = 1
+success: (6MAHX) [2025-05-18 14:30:30] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (9ASJM) [2025-05-18 14:30:30] select * from theme where id = 1
+success: (T674P) [2025-05-18 14:30:30] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (C9YOW) [2025-05-18 14:30:30] SELECT * FROM login_logs ORDER BY date_log desc
+success: (3ZCSM) [2025-05-18 14:30:30] select count(*) as 'total' from teachers where status = 1
+success: (4L1X5) [2025-05-18 14:30:30] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (9W86I) [2025-05-18 14:30:31] update theme set theme = 'theme16' where id = 1
+success: (IV6MD) [2025-05-18 14:30:42] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (UCKLO) [2025-05-18 14:30:42] select * from theme where id = 1
+success: (K5E1R) [2025-05-18 14:30:42] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (LEOV7) [2025-05-18 14:30:42] SELECT * FROM login_logs ORDER BY date_log desc
+success: (KXC7E) [2025-05-18 14:30:42] select count(*) as 'total' from teachers where status = 1
+success: (6OADL) [2025-05-18 14:30:42] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (52ATZ) [2025-05-18 14:30:42] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (FBLJU) [2025-05-18 14:30:42] update theme set theme = 'theme16' where id = 1
+success: (FJCZV) [2025-05-18 14:32:13] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (O1XP4) [2025-05-18 14:32:13] select * from theme where id = 1
+success: (EIQLP) [2025-05-18 14:32:13] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (XED5U) [2025-05-18 14:32:13] SELECT * FROM login_logs ORDER BY date_log desc
+success: (MJZSA) [2025-05-18 14:32:14] select count(*) as 'total' from teachers where status = 1
+success: (AMRLB) [2025-05-18 14:32:14] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (J8VZB) [2025-05-18 14:32:14] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (SC395) [2025-05-18 14:32:14] update theme set theme = 'theme16' where id = 1
+success: (NP64H) [2025-05-18 14:32:30] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (52DJS) [2025-05-18 14:32:30] select * from theme where id = 1
+success: (PZD6F) [2025-05-18 14:32:30] SELECT SUM(MONTH(u.createdate) = 1) AS Jan, SUM(MONTH(u.createdate) = 2) AS Feb, SUM(MONTH(u.createdate) = 3) AS Mar, SUM(MONTH(u.createdate) = 4) AS Apr, SUM(MONTH(u.createdate) = 5) AS May, SUM(MONTH(u.createdate) = 6) AS Jun, SUM(MONTH(u.createdate) = 7) AS Jul, SUM(MONTH(u.createdate) = 8) AS Aug, SUM(MONTH(u.createdate) = 9) AS Sep, SUM(MONTH(u.createdate) = 10) AS Oct, SUM(MONTH(u.createdate) = 11) AS Nov, SUM(MONTH(u.createdate) = 12) AS `Dec` FROM users u WHERE u.type = 'student' AND YEAR(u.createdate) = 2025;
+success: (EMO4P) [2025-05-18 14:32:30] SELECT * FROM login_logs ORDER BY date_log desc
+success: (38PWK) [2025-05-18 14:32:30] select count(*) as 'total' from teachers where status = 1
+success: (M67VY) [2025-05-18 14:32:30] select count(*) as 'total' from users where type = 'student' and status = 1
+success: (KQIRT) [2025-05-18 14:32:30] SELECT COUNT(DISTINCT c.course) as total FROM coursemajor c WHERE c.`status` = 1;
+success: (C3EJP) [2025-05-18 14:32:30] update theme set theme = 'theme16' where id = 1

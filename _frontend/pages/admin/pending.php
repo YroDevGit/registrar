@@ -48,10 +48,6 @@
   <!-- Bootstrap CSS -->
 
 
-<!-- Bootstrap JS and Popper.js (needed for modal) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <?php include_page("admin/lib") ?>
 </head>
@@ -221,7 +217,10 @@
 
 
 
-
+<!-- Bootstrap core JavaScript-->
+  <script src="<?= assets() ?>/js/jquery.min.js"></script>
+  <script src="<?= assets() ?>/js/popper.min.js"></script>
+  <script src="<?=assets()?>/js/bootstrap.min.js"></script>
   <!-- simplebar js -->
   <script src="<?= assets() ?>/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
@@ -229,6 +228,7 @@
 
   <!-- Custom scripts -->
   <script src="<?= assets() ?>/js/app-script.js"></script>
+  
 
   <script>
    async function loadUserDisplay(){
@@ -402,3 +402,5 @@ $(document).ready(async function() {
 </body>
 
 </html>
+
+  
