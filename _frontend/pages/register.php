@@ -223,8 +223,8 @@
 
       <div class="form-step" id="step4">
         <h2>Step 4: Account Details</h2>
-        <input type="text" name="username" id="username" placeholder="Username" required />
-        <input type="password" name="password" id="password" placeholder="Password" required />
+        <input type="text" name="username" id="username" placeholder="Username"  autocomplete="off" required />
+        <input type="password" name="password" id="password" placeholder="Password"  autocomplete="off" required />
         <div class="step-buttons">
           <button type="button" onclick="prevStep(4)">Back</button>
           <button type="button" onclick="nextStep(4)">Next</button>

@@ -1,0 +1,154 @@
+success: (N2TJ4) [2025-05-19 01:20:57] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (LHBJN) [2025-05-19 01:25:17] select * from users where username = 'tyrone232@gmail.comm' and password = 'dasdas'
+success: (6TSR5) [2025-05-19 01:25:25] select * from users where username = 'tyrone232@gmail.comm' and password = 'dasdas'
+success: (7JGCH) [2025-05-19 01:25:31] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TML20250507090144', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-19 01:25:30')
+success: (OL1B6) [2025-05-19 01:25:33] select * from quarter where status = 1 order by id desc
+success: (ZRECY) [2025-05-19 01:26:28] select * from quarter where status = 1 order by id desc
+success: (JPKXS) [2025-05-19 01:27:08] select * from users where username = 'tyrone21@gmail.comm' and password = 'dasdas'
+success: (NYDSM) [2025-05-19 01:27:15] INSERT INTO login_logs (user, lat, `long`, device, location, date_log) VALUES ('TMY20250507084805', 10.169497, 122.858994, 'Manufacturer  
+LENOVO Model  
+82TT', 'Asia PH Negros Occidental Himamaylan', '2025-05-19 01:27:15')
+success: (L32QZ) [2025-05-19 01:27:18] select * from theme where id = 1
+success: (FCLUJ) [2025-05-19 01:27:19] update theme set theme = 'theme16' where id = 1
+success: (1YUSK) [2025-05-19 01:27:29] select * from theme where id = 1
+success: (MNEJT) [2025-05-19 01:27:30] update theme set theme = 'theme16' where id = 1
+success: (J4MXL) [2025-05-19 01:27:32] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.status = 1 and u.type = 'student' ORDER BY u.createdate desc 
+success: (27BGQ) [2025-05-19 01:28:02] select * from theme where id = 1
+success: (1Y8VC) [2025-05-19 01:28:02] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (ACPZD) [2025-05-19 01:28:02] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (G2OHK) [2025-05-19 01:28:03] update theme set theme = 'theme16' where id = 1
+success: (W5VP8) [2025-05-19 01:28:11] select * from theme where id = 1
+success: (JXZ2H) [2025-05-19 01:28:11] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (1WPEO) [2025-05-19 01:28:11] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (ZULG1) [2025-05-19 01:28:11] update theme set theme = 'theme16' where id = 1
+success: (W8PA6) [2025-05-19 01:34:07] select * from theme where id = 1
+success: (VS9ZC) [2025-05-19 01:34:07] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (TQY18) [2025-05-19 01:34:07] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (79NT1) [2025-05-19 01:34:08] update theme set theme = 'theme16' where id = 1
+success: (SIE23) [2025-05-19 01:35:23] select * from theme where id = 1
+success: (X836A) [2025-05-19 01:35:23] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (FENUY) [2025-05-19 01:35:23] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (2SH7W) [2025-05-19 01:35:24] update theme set theme = 'theme16' where id = 1
+success: (Q8XJA) [2025-05-19 01:36:43] select * from theme where id = 1
+success: (RE7U2) [2025-05-19 01:36:43] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (5IK63) [2025-05-19 01:36:43] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (QG3TF) [2025-05-19 01:36:43] update theme set theme = 'theme16' where id = 1
+success: (LDQ45) [2025-05-19 01:36:45] select * from details where userid = 'ggg20250517041842'
+success: (4SC35) [2025-05-19 01:37:17] select * from theme where id = 1
+success: (3LGSX) [2025-05-19 01:37:17] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (6PI9L) [2025-05-19 01:37:17] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (CWBQS) [2025-05-19 01:37:17] update theme set theme = 'theme16' where id = 1
+success: (TNZ63) [2025-05-19 01:37:18] select * from details where userid = 'ggg20250517041842'
+success: (3SF62) [2025-05-19 01:37:42] select * from details where userid = 'ggg20250517041842'
+success: (EZ4OX) [2025-05-19 01:37:58] select * from theme where id = 1
+success: (N3F6J) [2025-05-19 01:37:58] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (PL7UN) [2025-05-19 01:37:58] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (N7EBK) [2025-05-19 01:37:59] update theme set theme = 'theme16' where id = 1
+success: (TJ2WI) [2025-05-19 01:38:01] select * from details where userid = 'ggg20250517041842'
+success: (XO4WD) [2025-05-19 01:38:19] select * from theme where id = 1
+success: (NYTO3) [2025-05-19 01:38:19] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (KM6G3) [2025-05-19 01:38:19] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (AVZ3P) [2025-05-19 01:38:19] update theme set theme = 'theme16' where id = 1
+success: (JY2ZR) [2025-05-19 01:38:21] select * from users where id = 'ggg20250517041842'
+success: (DYFX2) [2025-05-19 01:38:24] select * from details where userid = 'ggg20250517041842'
+success: (B2YK9) [2025-05-19 01:38:38] select * from theme where id = 1
+success: (68SAY) [2025-05-19 01:38:38] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (LSOV5) [2025-05-19 01:38:38] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (AXK2H) [2025-05-19 01:38:38] update theme set theme = 'theme16' where id = 1
+success: (RNHD6) [2025-05-19 01:38:48] select * from theme where id = 1
+success: (CNEX5) [2025-05-19 01:38:48] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (KQ3JP) [2025-05-19 01:38:48] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (IB54F) [2025-05-19 01:38:49] update theme set theme = 'theme16' where id = 1
+success: (G35PD) [2025-05-19 01:38:51] select * from details where userid = 'ggg20250517041842'
+success: (QG39M) [2025-05-19 01:39:46] select * from theme where id = 1
+success: (1C7J8) [2025-05-19 01:39:46] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (XDKBF) [2025-05-19 01:39:46] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (6WSFL) [2025-05-19 01:39:46] update theme set theme = 'theme16' where id = 1
+success: (VM21L) [2025-05-19 01:39:49] select * from details where userid = 'ggg20250517041842'
+success: (1XFIP) [2025-05-19 01:40:11] select * from theme where id = 1
+success: (32QHU) [2025-05-19 01:40:11] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (Y4T1N) [2025-05-19 01:40:11] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (CPH5F) [2025-05-19 01:40:11] update theme set theme = 'theme16' where id = 1
+success: (MZG35) [2025-05-19 01:40:13] select * from details where userid = 'ggg20250517041842'
+success: (JIOXR) [2025-05-19 01:40:30] select * from theme where id = 1
+success: (6CZY4) [2025-05-19 01:40:30] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (2QLXB) [2025-05-19 01:40:30] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (FU9ZW) [2025-05-19 01:40:31] update theme set theme = 'theme16' where id = 1
+success: (OGQSE) [2025-05-19 01:40:34] select * from details where userid = 'ggg20250517041842'
+success: (N524V) [2025-05-19 01:42:03] select * from theme where id = 1
+success: (4Q29L) [2025-05-19 01:42:03] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (4C5PT) [2025-05-19 01:42:03] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (FV2IS) [2025-05-19 01:42:04] update theme set theme = 'theme16' where id = 1
+success: (MAQJR) [2025-05-19 01:42:06] select * from details where userid = 'ggg20250517041842'
+success: (KX86L) [2025-05-19 01:42:12] select * from details where userid = 'ggg20250517041842'
+success: (EZ8Q7) [2025-05-19 01:43:13] select * from theme where id = 1
+success: (YXA87) [2025-05-19 01:43:13] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (KFHP6) [2025-05-19 01:43:13] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (WUE8Y) [2025-05-19 01:43:14] update theme set theme = 'theme16' where id = 1
+success: (NA8GB) [2025-05-19 01:43:15] select * from details where userid = 'ggg20250517041842'
+success: (613KH) [2025-05-19 01:43:39] select * from theme where id = 1
+success: (SJIK1) [2025-05-19 01:43:39] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (FPOVA) [2025-05-19 01:43:40] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (71JIW) [2025-05-19 01:43:40] update theme set theme = 'theme16' where id = 1
+success: (I1SQE) [2025-05-19 01:43:42] select * from details where userid = 'ggg20250517041842'
+success: (9MY5B) [2025-05-19 01:44:18] select * from theme where id = 1
+success: (VJ2FH) [2025-05-19 01:44:18] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (HE9CJ) [2025-05-19 01:44:18] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (YSK6P) [2025-05-19 01:44:18] update theme set theme = 'theme16' where id = 1
+success: (8ML65) [2025-05-19 01:44:19] select * from details where userid = 'ggg20250517041842'
+success: (CJ7RM) [2025-05-19 01:44:29] select * from details where userid = 'ggg20250517041842'
+success: (1LC7W) [2025-05-19 01:44:57] select * from theme where id = 1
+success: (MQSOV) [2025-05-19 01:44:57] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (EP97Y) [2025-05-19 01:44:57] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (WBJCT) [2025-05-19 01:44:58] update theme set theme = 'theme16' where id = 1
+success: (GA247) [2025-05-19 01:44:59] select * from details where userid = 'ggg20250517041842'
+success: (BSMGF) [2025-05-19 01:45:12] select * from theme where id = 1
+success: (H9YE5) [2025-05-19 01:45:12] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (KTQ83) [2025-05-19 01:45:12] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (STYQE) [2025-05-19 01:45:13] update theme set theme = 'theme16' where id = 1
+success: (TRPKG) [2025-05-19 01:45:14] select * from details where userid = 'ggg20250517041842'
+success: (LTM3Q) [2025-05-19 01:45:36] select * from theme where id = 1
+success: (3GT2F) [2025-05-19 01:45:36] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (G7UQK) [2025-05-19 01:45:36] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (DATVO) [2025-05-19 01:45:37] update theme set theme = 'theme16' where id = 1
+success: (3MYUQ) [2025-05-19 01:45:38] select * from details where userid = 'ggg20250517041842'
+success: (7RYLT) [2025-05-19 01:45:44] select * from theme where id = 1
+success: (TUCLM) [2025-05-19 01:45:44] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (YCHI1) [2025-05-19 01:45:44] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (A3D6J) [2025-05-19 01:45:45] update theme set theme = 'theme16' where id = 1
+success: (LC9PD) [2025-05-19 01:45:46] select * from details where userid = 'ggg20250517041842'
+success: (Y8TXM) [2025-05-19 01:45:59] select * from theme where id = 1
+success: (X4ELW) [2025-05-19 01:45:59] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (ASXMK) [2025-05-19 01:45:59] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (6G41A) [2025-05-19 01:46:00] update theme set theme = 'theme16' where id = 1
+success: (IPQ29) [2025-05-19 01:46:01] select * from details where userid = 'TLM-0857289524432'
+success: (G9XCR) [2025-05-19 01:46:03] select * from details where userid = 'TLM-0857289524432'
+success: (DUC9T) [2025-05-19 01:46:05] select * from details where userid = 'ggg20250517041842'
+success: (BUAJW) [2025-05-19 01:46:07] select * from details where userid = 'TML20250507085842'
+success: (ZF1NT) [2025-05-19 01:46:09] select * from details where userid = 'TLM-0857289525'
+success: (6JA8G) [2025-05-19 01:46:12] select * from details where userid = 'TLM-0857289526'
+success: (4T2QB) [2025-05-19 01:46:15] select * from details where userid = 'TLM-0857289526'
+success: (UKHO4) [2025-05-19 01:47:13] select * from theme where id = 1
+success: (MR4CQ) [2025-05-19 01:47:13] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (QF936) [2025-05-19 01:47:13] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (8STWO) [2025-05-19 01:47:13] update theme set theme = 'theme16' where id = 1
+success: (TMGA3) [2025-05-19 01:47:16] select * from details where userid = 'TLM-0857289524432'
+success: (YECSZ) [2025-05-19 01:47:17] select * from details where userid = 'TLM-0857289524432'
+success: (LFIX6) [2025-05-19 01:47:17] select * from details where userid = 'TLM-0857289524432'
+success: (C4EVN) [2025-05-19 01:47:18] select * from details where userid = 'ggg20250517041842'
+success: (VBL74) [2025-05-19 01:47:18] select * from details where userid = 'ggg20250517041842'
+success: (Y5RTW) [2025-05-19 01:47:19] select * from details where userid = 'ggg20250517041842'
+success: (5IHNL) [2025-05-19 01:47:36] select * from theme where id = 1
+success: (TBES9) [2025-05-19 01:47:36] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (XTP53) [2025-05-19 01:47:36] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (B3WH4) [2025-05-19 01:47:37] update theme set theme = 'theme16' where id = 1
+success: (68XVS) [2025-05-19 01:47:39] select * from details where userid = 'TML20250507085842'
+success: (IO92P) [2025-05-19 01:48:11] select * from theme where id = 1
+success: (FQ1M5) [2025-05-19 01:48:11] SELECT * FROM coursemajor WHERE status = 1 order by course, major, year, section
+success: (JZM37) [2025-05-19 01:48:12] SELECT u.id, u.username, u.`password`,u.coursemajor 'cmajor', u.firstname, u.lastname, u.middlename, u.birthdate,u.`status` 'userstat', u.phone, u.address,u.img, c.id 'cid', c.course,c.major,c.`year`,c.section,c.`status` FROM users u, coursemajor c WHERE u.coursemajor = c.id  and u.type = 'student' ORDER BY u.createdate desc 
+success: (U8G1W) [2025-05-19 01:48:12] update theme set theme = 'theme16' where id = 1
+success: (WU6VF) [2025-05-19 01:48:14] select * from details where userid = 'TML20250507085842'
+success: (9148Q) [2025-05-19 01:48:16] select * from details where userid = 'ggg20250517041842'
+success: (OF69J) [2025-05-19 01:48:18] select * from details where userid = 'TML20250507085842'

@@ -9,7 +9,7 @@
   <meta name="author" content="" />
   <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- loader-->
   <link href="<?= assets() ?>/css/pace.min.css" rel="stylesheet" />
   <script src="<?= assets() ?>/js/pace.min.js"></script>
@@ -113,7 +113,7 @@
                       <option value="0">All</option>
                     </select>
                   </div>
-                  
+
                 </div>
                 <div class="table-responsive">
                   <table class="table table-hover" id="example">
@@ -148,79 +148,122 @@
       <!-- End container-fluid-->
 
       <!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Header</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Header</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <div align='center'>
+                <img src="" height="200" width="200" id="upict" alt="">
+              </div>
+              <div>
+                <div class="text-dark">Fullname</div>
+                <div><span id="fullname" class="form-control"></span></div>
+              </div>
+              <div>
+                <div class="text-dark">ID#</div>
+                <div><span id="ID" class="form-control"></span></div>
+              </div>
+              <div>
+                <div class="text-dark">Birthdate</div>
+                <div><span id="bdate" class="form-control"></span></div>
+              </div>
+              <div>
+                <div class="text-dark">Phone</div>
+                <div><span id="phone" class="form-control"></span></div>
+              </div>
+              <div>
+                <div class="text-dark">Address</div>
+                <div><span id="address" class="form-control"></span></div>
+              </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
       </div>
-      
-      <!-- Modal Body -->
-      <div class="modal-body">
-        <div align='center'>
-          <img src="" height="200" width="200" id="upict" alt="">
-        </div>
-        <div>
-          <div class="text-dark">Fullname</div>
-          <div><span id="fullname" class="form-control"></span></div>
-        </div>
-        <div>
-          <div class="text-dark">ID#</div>
-          <div><span id="ID" class="form-control"></span></div>
-        </div>
-        <div>
-          <div class="text-dark">Birthdate</div>
-          <div><span id="bdate" class="form-control"></span></div>
-        </div>
-        <div>
-          <div class="text-dark">Phone</div>
-          <div><span id="phone" class="form-control"></span></div>
-        </div>
-        <div>
-          <div class="text-dark">Address</div>
-          <div><span id="address" class="form-control"></span></div>
+
+
+      <!-- previous school details modal -->
+      <div class="modal" id="schoolModal" style="color:black;">
+        <div class="modal-dialog" style="max-width: 800px;">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Previous School Details</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <table style="width: 100%;">
+                <tr>
+                  <td><div class="text-dark">Elementary</div></td>
+                  <td colspan="2"><span id="primaryed" class="form-control"></span></td>
+                  <td><span id="pyear" class="form-control"></span></td>
+                </tr>
+                
+                <tr>
+                  <td><div class="text-dark">Secondary</div></td>
+                  <td colspan="2"><span id="secondary" class="form-control"></span></td>
+                  <td><span id="syear" class="form-control"></span></td>
+                </tr>
+
+                <tr>
+                  <td><div class="text-dark">SHS</div></td>
+                  <td colspan="2"><span id="shs" class="form-control"></span></td>
+                  <td><span id="shsyear" class="form-control"></span></td>
+                </tr>
+                
+              </table>
+              
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+ 
+
+
+  </div><!--End content-wrapper-->
+  <!--Start Back To Top Button-->
+  <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+  <!--End Back To Top Button-->
+
+  <!--Start footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="text-center">
+        Copyright © 2018 Dashtreme Admin
       </div>
-      
     </div>
-  </div>
-</div>
+  </footer>
+  <!--End footer-->
 
-    </div><!--End content-wrapper-->
-    <!--Start Back To Top Button-->
-    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-    <!--End Back To Top Button-->
-
-    <!--Start footer-->
-    <footer class="footer">
-      <div class="container">
-        <div class="text-center">
-          Copyright © 2018 Dashtreme Admin
-        </div>
-      </div>
-    </footer>
-    <!--End footer-->
-
-    <!--start color switcher-->
-    <?php include_page("admin/theme") ?>
+  <!--start color switcher-->
+  <?php include_page("admin/theme") ?>
   <!--end color switcher-->
   </div><!--End wrapper-->
 
 
 
-<!-- Bootstrap core JavaScript-->
-  <script src="<?= assets() ?>/js/jquery.min.js"></script>
-  <script src="<?= assets() ?>/js/popper.min.js"></script>
-  <script src="<?=assets()?>/js/bootstrap.min.js"></script>
+  <!-- Bootstrap core JavaScript-->
+
   <!-- simplebar js -->
   <script src="<?= assets() ?>/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
@@ -228,75 +271,121 @@
 
   <!-- Custom scripts -->
   <script src="<?= assets() ?>/js/app-script.js"></script>
-  
+
 
   <script>
-   async function loadUserDisplay(){
-    document.querySelectorAll(".idfield").forEach(element => {
-      element.onclick = async function(){
-        $idfield = this.getAttribute("idfield");
-        $api = await mypost("Students/getbyid", {id:$idfield});
-        $backend = $api.backend;
-        if($backend.code == 200){
-          $frow = $backend.first_row;
-          $fullname = $frow.firstname+" "+$frow.middlename+" "+$frow.lastname;
-          set_html("#fullname", `${$fullname}`);
-          set_html("#ID", `${$frow.id}`);
-          set_html("#bdate", `${$frow.birthdate}`);
-          set_html("#phone", `${$frow.phone || 'not set'}`);
-          set_html("#address", `${$frow.address || 'not set'}`);
-          document.querySelector("#upict").src = $frow.img;
-          const modal = new bootstrap.Modal(document.getElementById('myModal'));
-          modal.show();
-        }else{
-          alert($backend.message);
+    async function loadUserDisplay() {
+      document.querySelectorAll(".idfield").forEach(element => {
+        element.onclick = async function() {
+          $idfield = this.getAttribute("idfield");
+          $api = await mypost("Students/getbyid", {
+            id: $idfield
+          });
+          $backend = $api.backend;
+          if ($backend.code == 200) {
+            $frow = $backend.first_row;
+            $fullname = $frow.firstname + " " + $frow.middlename + " " + $frow.lastname;
+            set_html("#fullname", `${$fullname}`);
+            set_html("#ID", `${$frow.id}`);
+            set_html("#bdate", `${$frow.birthdate}`);
+            set_html("#phone", `${$frow.phone || 'not set'}`);
+            set_html("#address", `${$frow.address || 'not set'}`);
+            document.querySelector("#upict").src = $frow.img;
+            const modal = new bootstrap.Modal(document.getElementById('myModal'));
+            modal.show();
+          } else {
+            alert($backend.message);
+          }
+
         }
-        
-      }
-   });
-   }
+      });
+    }
   </script>
-  
+
+  <script>
+
+    function showSchoolModal(){
+      document.querySelectorAll(".schoolfield").forEach(element => {
+        element.onclick = async function() {
+          $idfield = this.getAttribute("idfield");
+          $api = await mypost("details/getbyid", {
+            id: $idfield
+          });
+          $backend = $api.backend;
+          if ($backend.code == 200) {
+            $frow = $backend.first_row;
+            if($frow.length === 0){
+              Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: "No previous school details found",
+              });return;
+            }
+            set_html("#primaryed", `${$frow.primaryed}`);
+            set_html("#pyear", `${$frow.pyear}`);
+            set_html("#secondary", `${$frow.secondary}`);
+            set_html("#syear", `${$frow.syear}`);
+            set_html("#shs", `${$frow.shs}`);
+            set_html("#shsyear", `${$frow.shsyear}`);
+            const modal = new bootstrap.Modal(document.getElementById('schoolModal'));
+            modal.show();
+          } else {
+            alert($backend.message);
+          }
+
+        }
+      });
+    }
+
+  </script>
+
   <script>
     const table = document.querySelector("#example");
     const dataTable = new DataTable(table);
 
     async function approveStudent(id, coursemajor) {
-      $post = {"id":id, "status":1, coursemajor: coursemajor};
+      $post = {
+        "id": id,
+        "status": 1,
+        coursemajor: coursemajor
+      };
 
-      confirmMessage("Are you sure to proceed?", async()=>{
+      confirmMessage("Are you sure to proceed?", async () => {
         const result = await mypost('/Students/approvestudent', $post);
-      if (result?.backend?.code == 200) {
-        Swal.fire({
-          icon: 'success',
-          title: 'Success',
-          text: result?.backend?.message,
-        }).then(() => {
-          reload();
-        });
-      } else {
-        alert("Error: " + result?.backend?.message);
-      }
+        if (result?.backend?.code == 200) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: result?.backend?.message,
+          }).then(() => {
+            reload();
+          });
+        } else {
+          alert("Error: " + result?.backend?.message);
+        }
       });
 
     }
 
-    async function loadCourses(){
+    async function loadCourses() {
       $res = await mypost("action/getactivecourse");
       $backend = $res.backend;
-      if($backend.code == 200){
+      if ($backend.code == 200) {
         $data = $backend.data ?? [];
 
         $data.forEach(column => {
-          $course = column.course+" "+column.major+" "+column.year+"-"+column.section+" ("+column.sem+")";
+          $course = column.course + " " + column.major + " " + column.year + "-" + column.section + " (" + column.sem + ")";
           add_html("#scourse", `<option value='${column.id}'>${$course}</option>`)
         });
       }
     }
 
     async function ignoreStudent(id) {
-      $post = {"id":id, "status":3};
-      confirmMessage("Are you sure to proceed?", async()=>{
+      $post = {
+        "id": id,
+        "status": 3
+      };
+      confirmMessage("Are you sure to proceed?", async () => {
         const result = await mypost('/Students/ignoreStudent', $post);
         if (result?.backend?.code == 200) {
           Swal.fire({
@@ -310,23 +399,26 @@
           alert("Error: " + result?.backend?.message);
         }
       })
-      
+
     }
 
-    document.querySelector("#filter").addEventListener("change",async function(){
+    document.querySelector("#filter").addEventListener("change", async function() {
       await loadStudents();
     });
 
-    document.querySelector("#scourse").addEventListener("change",async function(){
+    document.querySelector("#scourse").addEventListener("change", async function() {
       await loadStudents();
     });
 
 
-    async function loadStudents(){
+    async function loadStudents() {
       $filter = selected_value("#filter");
       $scourse = selected_value("#scourse");
-      $param = {filter:$filter, scourse: $scourse};
-      $data = await mypost( '/Students/getStudents', $param);
+      $param = {
+        filter: $filter,
+        scourse: $scourse
+      };
+      $data = await mypost('/Students/getStudents', $param);
       $data = $data?.backend?.data ?? [];
       dataTable.clear().draw();
       $data.forEach(column => {
@@ -336,8 +428,8 @@
           $btn = `<button class="btn btn-success" onclick="approveStudent('${column.id}', '${column.cmajor}')">Approve</button> <button class="btn btn-danger" onclick="ignoreStudent('${column.id}')">Decline</button>`;
         } else {
           $bbt = ``;
-          
-          $btn = `<button class="btn btn-grey" onclick="">Approve</button> `+$bbt;
+
+          $btn = `<button class="btn btn-grey" onclick="">Approve</button> ` + $bbt;
         }
         dataTable.row.add([
           `<img src="${column.img}" alt="" height="30" width="30">`,
@@ -345,27 +437,29 @@
           column.lastname,
           column.middlename,
           `<label class='idfield' idfield='${column.id}'>${column.id}</label>`,
-          column.course + " " + column.major + "-" + column.year + "-" + column.section,
+          `<label class='schoolfield' idfield='${column.id}'>${column.course + " " + column.major + "-" + column.year + "-" + column.section}</label>`,
+          
           $btn
 
         ]).draw();
       });
     }
 
- 
-$(document).ready(async function() {
-      await loadCourses();
-      await loadStudents(); 
-      await loadUserDisplay();
-});
 
-    
+    $(document).ready(async function() {
+      await loadCourses();
+      await loadStudents();
+      await loadUserDisplay();
+      await showSchoolModal();
+    });
   </script>
 
   <script>
-    function remm(id){
-      confirmMessage("Are you sure to proceed?", async()=>{
-        const result = await mypost('/Action/disableuser', {id:id});
+    function remm(id) {
+      confirmMessage("Are you sure to proceed?", async () => {
+        const result = await mypost('/Action/disableuser', {
+          id: id
+        });
         if (result?.backend?.code == 200) {
           Swal.fire({
             icon: 'success',
@@ -382,16 +476,16 @@ $(document).ready(async function() {
   </script>
 
   <script>
-    function confirmMessage($message, $func){
+    function confirmMessage($message, $func) {
       Swal.fire({
         title: "Confirmation Messsage",
         text: $message,
         icon: "question",
-        showCancelButton: true, 
+        showCancelButton: true,
         confirmButtonText: "Yes, do it!",
         cancelButtonText: "No, cancel!",
-      }).then((result)=>{
-        if(result.isConfirmed){
+      }).then((result) => {
+        if (result.isConfirmed) {
           $func();
         }
       });
@@ -403,4 +497,6 @@ $(document).ready(async function() {
 
 </html>
 
-  
+<script src="<?= assets() ?>/js/jquery.min.js"></script>
+<script src="<?= assets() ?>/js/popper.min.js"></script>
+<script src="<?= assets() ?>/js/bootstrap.min.js"></script>

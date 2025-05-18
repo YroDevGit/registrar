@@ -150,6 +150,9 @@ table th, table td {
   color: #888;
   border-top: 1px solid #333;
 }
+#gradetbl_filter label input{
+  color:white;
+}
 
   </style>
   <style>
